@@ -1,11 +1,17 @@
-//
-// Created by 30671 on 2022/6/27.
-//
-
 #ifndef DATASTRUCTURE_SQLIST_H
 #define DATASTRUCTURE_SQLIST_H
 
 #include "../../Def.h"
+
+/**
+    -*- coding:utf-8 -*-
+    @projectName:   DataStructure
+    @headerFileName:SqList
+    @author:        30671
+    @description:   TODO
+    @date:          2022/6/27
+    @version:       1.0
+*/
 
 /**
  * 动态线性表

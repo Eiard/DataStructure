@@ -1,11 +1,17 @@
-//
-// Created by 30671 on 2022/6/27.
-//
-
 #ifndef DATASTRUCTURE_SEQLIST_H
 #define DATASTRUCTURE_SEQLIST_H
 
 #include "../../Def.h"
+
+/**
+    -*- coding:utf-8 -*-
+    @projectName:   DataStructure
+    @headerFileName:SeqList
+    @author:        30671
+    @description:   TODO
+    @date:          2022/6/27
+    @version:       1.0
+*/
 
 /**
  * 静态线性表
