@@ -3,3 +3,12 @@
 //
 
 #include "SqList.h"
+
+
+void InitSqList(SqList &L) {
+    L.length = 0;
+}
+
+void TestSqList() {
+
+}
