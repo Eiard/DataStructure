@@ -1,14 +1,15 @@
-#include "SeqList.h"
-
 /**
     -*- coding:utf-8 -*-
-    @projectName:   DataStructure
-    @sourceFileName:SeqList
+    @projectName:   DataStructure 
+    @FileName:      SeqList
     @author:        30671
-    @description:   TODO
+    @description:   TODO 
     @date:          2022/6/27
     @version:       1.0
 */
+
+
+#include "SeqList.h"
 
 void InitSeqList(SeqList &L) {
     /**

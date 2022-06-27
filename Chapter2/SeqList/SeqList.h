@@ -1,22 +1,24 @@
+/**
+    -*- coding:utf-8 -*-
+    @projectName:   DataStructure 
+    @FileName:      SeqList
+    @author:        30671
+    @description:   TODO 
+    @date:          2022/6/27
+    @version:       1.0
+*/
+
+
 #ifndef DATASTRUCTURE_SEQLIST_H
 #define DATASTRUCTURE_SEQLIST_H
 
 #include "../../Def.h"
 
 /**
-    -*- coding:utf-8 -*-
-    @projectName:   DataStructure
-    @headerFileName:SeqList
-    @author:        30671
-    @description:   TODO
-    @date:          2022/6/27
-    @version:       1.0
-*/
-
-/**
  * 静态线性表
  */
 #define SeqListInitSize 10      // 顺序表的初始长度
+
 typedef struct {
     ElemType *data;             // 指示动态分配数组的指针
     int MaxSize;                // 顺序表的最大容量
