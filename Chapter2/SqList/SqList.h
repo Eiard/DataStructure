@@ -31,6 +31,14 @@ typedef struct {
 void InitSqList(SqList &L);
 
 /**
+ * 向下标为i的位置插入元素
+ * @param L
+ * @param i
+ * @param e
+ */
+void InsertSqList(SqList &L, int i, ElemType e);
+
+/**
  * 功能测试函数
  */
 void TestSqList();
