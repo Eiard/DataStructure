@@ -3,7 +3,7 @@
     @projectName:   DataStructure 
     @FileName:      SqList
     @author:        30671
-    @description:   TODO 
+    @description:   TODO
     @date:          2022/6/27
     @version:       1.0
 */
@@ -31,13 +31,50 @@ typedef struct {
 void InitSqList(SqList &L);
 
 /**
- * 向下标为i的位置插入元素
+ * 向下标为i的位置插入元素 下标i后面的元素全部后移
+ * 最好情况: 新元素插入到表尾,不需要移动元素
+ *          i = n + 1 , 循环0次 : 最好时间复杂度 = O(1)
+ * 最坏情况: 新元素插入到表头,需要将原有的n个元素全部向后移动
+ *          i = 1 ,循环n次 : 最坏时间复杂度为 = O(n)
+ * 平均情况: 假设新元素插入到任何一个位置的概率相同, 即 i = 1,2,3,...,length+1的概率都是p = 1/(n+1)
+ *          i = 1 , 循环n次    i = 2 , 循环n-1次    i = 3 , 循环n-2次    ....    i = n + 1 , 循环0次
+ *         平均循环次数 = np + (n-1)p + (n-2)p .... + 1p = n(n+1)/2 × 1/(n+1) = n/2
+ *         平均时间复杂度 O(n)
  * @param L
  * @param i
  * @param e
  */
-void InsertSqList(SqList &L, int i, ElemType e);
+bool InsertSqList(SqList &L, int i, ElemType e);
 
+/**
+ * 删除表L中第i个位置的元素,i下标后的元素全部前移
+ * 最好情况: 删除表尾元素,不需要移动元素
+ *          i = n , 循环0次 : 最好时间复杂度 = O(1)
+ * 最坏情况: 移动除头元素外的所有元素
+ *          i = 1 ,循环n-1次 : 最坏时间复杂度为 = O(n)
+ * 平均情况: 假设删除任意元素在任何一个位置的概率相同, 即 i = 1,2,3,...,length+1的概率都是p = 1/(n+1)
+ *          i = 1 , 循环n-1次    i = 2 , 循环n-2次    i = 3 , 循环n-3次    ....    i = n , 循环0次
+ *         平均循环次数 = (n-1)p + (n-1)p + (n-2)p .... + 1p = (n-1)(n-1 + 1)/2 × 1/(n) = (n-1)/2
+ *         平均时间复杂度 O(n)
+ * @param  L
+ * @param  i
+ * @param  e
+ * @return e(通过引用返回删除的值)
+ */
+bool DeleteSqList(SqList &L, int i, ElemType &e);
+
+/**
+ * 通过下标直接获取元素
+ * @param L
+ * @param i
+ * @return
+ */
+ElemType GetElemSqList(SqList L, int i);
+
+/**
+ * 遍历静态线性表
+ * @param L
+ */
 void Traverse(SqList L);
 
 /**
