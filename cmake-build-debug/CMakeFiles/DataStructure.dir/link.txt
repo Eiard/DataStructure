@@ -1,0 +1,3 @@
+"D:\Computer\CLion 2020.3.4\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\DataStructure.dir/objects.a
+D:\Computer\Environment\cpp\mingw64\bin\ar.exe cr CMakeFiles\DataStructure.dir/objects.a @CMakeFiles\DataStructure.dir\objects1.rsp
+D:\Computer\Environment\cpp\mingw64\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\DataStructure.dir/objects.a -Wl,--no-whole-archive  -o DataStructure.exe -Wl,--out-implib,libDataStructure.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\DataStructure.dir\linklibs.rsp

@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Computer/Code/C++/DataStructure/Chapter2/SqList/SqList.cpp
+SqList.h
+D:/Computer/Code/C++/DataStructure/Chapter2/SqList/SqList.h
+
+D:/Computer/Code/C++/DataStructure/Chapter2/SqList/SqList.h
+../../Def.h
+D:/Computer/Code/C++/DataStructure/Def.h
+
+D:/Computer/Code/C++/DataStructure/Def.h
+cstdio
+-
+malloc.h
+-
+cstring
+-
+cmath
+-
+
