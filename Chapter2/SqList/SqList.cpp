@@ -82,7 +82,7 @@ ElemType LocateElemSqList(SqList L, ElemType e) {
 }
 
 
-void Traverse(SqList L) {
+void TraverseSqList(SqList L) {
     for (int i = 0; i < L.length; ++i) {
         printf(" No.%d %d\n", i + 1, L.data[i]);
     }
@@ -96,16 +96,16 @@ void TestSqList() {
 
     InsertSqList(L, 1, 2);
     InsertSqList(L, 1, 3);
-    Traverse(L);
+    TraverseSqList(L);
 
     int temp;
     if (DeleteSqList(L, 1, temp)) {
-        Traverse(L);
+        TraverseSqList(L);
         printf("The num is %d\n", temp);
     }
 
     InsertSqList(L, 1, 6);
-    Traverse(L);
+    TraverseSqList(L);
 
     printf("6 is The No.%d num\n", LocateElemSqList(L, 6));
 

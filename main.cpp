@@ -14,7 +14,7 @@
 
 int main() {
     // 静态线性表测试
-     TestSqList();
+    // TestSqList();
 
     // 动态线性表测试
     // TestSqeList();

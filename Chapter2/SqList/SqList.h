@@ -93,7 +93,7 @@ ElemType LocateElemSqList(SqList L, ElemType e);
  * 遍历静态线性表
  * @param L
  */
-void Traverse(SqList L);
+void TraverseSqList(SqList L);
 
 /**
  * 功能测试函数
