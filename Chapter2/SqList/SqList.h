@@ -71,6 +71,16 @@ bool DeleteSqList(SqList &L, int i, ElemType &e);
  */
 ElemType GetElemSqList(SqList L, int i);
 
+
+/**
+ * 获取某个值在该线性表中的下标
+ * @param L
+ * @param e
+ * @return
+ */
+ElemType LocateElemSqList(SqList L, ElemType e);
+
+
 /**
  * 遍历静态线性表
  * @param L
