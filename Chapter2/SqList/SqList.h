@@ -65,6 +65,7 @@ bool DeleteSqList(SqList &L, int i, ElemType &e);
 
 /**
  * 通过下标直接获取元素
+ * 时间复杂度 = O(1)
  * @param L
  * @param i
  * @return
@@ -74,6 +75,13 @@ ElemType GetElemSqList(SqList L, int i);
 
 /**
  * 获取某个值在该线性表中的下标
+ * 最好情况: 目标元素在表头
+ *          循环1次 : 最好时间复杂度 = O(1)
+ * 最坏情况: 目标元素在表尾
+ *          循环n次 : 最坏时间复杂度 = O(n)
+ * 平均情况: 假设删除任意元素在任何一个位置的概率相同 都是 1/n
+ *          目标元素    在第1位循环1次    第2位循环2次     第3位循环3次 ....    第n位循环n次
+ *          平均循环次数 1/n + 2/n + 3/n .... n/n = (n+1)/2   平均时间复杂度为O(n)
  * @param L
  * @param e
  * @return
