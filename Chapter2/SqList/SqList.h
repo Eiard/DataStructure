@@ -38,6 +38,8 @@ void InitSqList(SqList &L);
  */
 void InsertSqList(SqList &L, int i, ElemType e);
 
+void Traverse(SqList L);
+
 /**
  * 功能测试函数
  */

@@ -28,6 +28,21 @@ void InsertSqList(SqList &L, int i, ElemType e) {
     L.length++;
 }
 
+void Traverse(SqList L) {
+    for (int i = 0; i < L.length; ++i) {
+        printf(" No.%d %d\n", i, L.data[i]);
+    }
+}
+
+
 void TestSqList() {
+    SqList L;
+
+    InitSqList(L);
+
+    InsertSqList(L, 1, 2);
+    InsertSqList(L, 1, 3);
+    Traverse(L);
+
 
 }
