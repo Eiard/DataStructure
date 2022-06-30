@@ -11,6 +11,88 @@
 
 #include "LNode.h"
 
+bool InitLinkList(LinkList &L) {
+    // 初始化头结点
+    L = (LNode *) malloc(sizeof(LNode));
+
+    // 内存分配失败
+    if (L == nullptr) {
+        return false;
+    }
+
+    // 头结点下一跳结点初始化为 nullptr
+    L->next = nullptr;
+
+    return true;
+}
+
+
+LinkList HeadInsertBuildLinkList(LinkList &L) {
+    LNode *s;
+    ElemType x;
+
+    // 给链表头结点动态分配内存空间(创建头结点)
+    L = (LinkList) malloc(sizeof(LNode));
+
+    // 初始为空链表
+    L->next = nullptr;
+
+    // 输入节点的值
+    scanf("%d", &x);
+
+    while (x != 9999) {
+        // 动态分配一个节点
+        s = (LNode *) malloc(sizeof(LNode));
+
+        // 把值放入
+        s->data = x;
+
+        // 让新节点s 的下一跳指向 头结点的下一跳
+        s->next = L->next;
+
+        // 头结点的下一跳指向 新结点s
+        L->next = s;
+        scanf("%d", &x);
+    }
+    return L;
+}
+
+LinkList TailInsertBuildLinkList(LinkList &L) {
+    ElemType x;
+
+    // 动态分配头结点地址
+    L = (LinkList) malloc(sizeof(LNode));
+
+    if (L == nullptr) {
+        return nullptr;
+    }
+
+    // r为表尾指针(辅助指针)
+    LNode *s, *r = L;
+    // 输入结点的值
+    scanf("%d", &x);
+
+    while (x != 9999) {  // 输入9999 表示结束
+        // 创建一个结点并且动态分配内存空间
+        s = (LNode *) malloc(sizeof(LNode));
+
+        // 输入的值存入新的结点
+        s->data = x;
+
+        // 辅助指针,始终指向尾部结点 (原先的尾结点指向新的结点)
+        r->next = s;
+
+        // 随着新添加的结点 , 辅助指针r 后移
+        r = s;
+        scanf("%d", &x);
+    }
+
+    // 给最后一个结点的下一个结点赋值为空
+    r->next = nullptr;
+
+    return L;
+}
+
 LNode *GetElemLinkList(LinkList L, int i) {
     // 计数器
     int j = 1;
@@ -40,56 +122,6 @@ LNode *GetElemLinkList(LinkList L, int i) {
 
 }
 
-LinkList HeadInsertBuildLinkList(LinkList &L) {
-    LNode *s;
-    int x;
-
-    // 给链表头结点动态分配内存空间(创建头结点)
-    L = (LinkList) malloc(sizeof(LNode));
-
-    // 初始为空链表
-    L->next = nullptr;
-
-    // 输入节点的值
-    scanf("%d", &x);
-
-    while (x != 9999) {
-        // 动态分配一个节点
-        s = (LNode *) malloc(sizeof(LNode));
-
-        // 把值放入
-        s->data = x;
-
-        // 让新节点s 的下一跳指向 头结点的下一跳
-        s->next = L->next;
-
-        // 头结点的下一跳指向 新结点s
-        L->next = s;
-        scanf("%d", &x);
-    }
-    return L;
-}
-
-LinkList TailInsertBuildLinkList(LinkList &L) {
-    int x;
-
-    return L;
-}
-
-bool InitLinkList(LinkList &L) {
-    // 初始化头结点
-    L = (LNode *) malloc(sizeof(LNode));
-
-    // 内存分配失败
-    if (L == nullptr) {
-        return false;
-    }
-
-    // 头结点下一跳结点初始化为 nullptr
-    L->next = nullptr;
-
-    return true;
-}
 
 void TraverseLinkList(LinkList L) {
     if (L->next == nullptr) {
@@ -114,7 +146,10 @@ void TestLinkList() {
     LinkList L;
 
     // 头插法建立单链表
-    HeadInsertBuildLinkList(L);
+    // HeadInsertBuildLinkList(L);
+
+    // 尾插法建立单链表
+    TailInsertBuildLinkList(L);
 
     // 遍历整个链表
     TraverseLinkList(L);
