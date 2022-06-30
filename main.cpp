@@ -11,6 +11,9 @@
 
 #include "Def.h"
 #include "Chapter2/SqList/SqList.h"
+#include "Chapter2/SeqList/SeqList.h"
+#include "Chapter2/LNode/LNode.h"
+
 
 int main() {
     // 静态线性表测试
@@ -19,8 +22,8 @@ int main() {
     // 动态线性表测试
     // TestSqeList();
 
-
-
+    // 单链表的测试
+    TestLinkList();
 
 
     return 0;

@@ -62,6 +62,6 @@ void TraverseLinkList(LinkList L);
 /**
  * 功能测试函数
  */
-void TestSeqLinkList();
+void TestLinkList();
 
 #endif //DATASTRUCTURE_LNODE_H

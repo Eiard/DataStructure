@@ -6,6 +6,18 @@
 
 #IncludeRegexTransform: 
 
+D:/Computer/Code/C++/DataStructure/Chapter2/LNode/LNode.cpp
+LNode.h
+D:/Computer/Code/C++/DataStructure/Chapter2/LNode/LNode.h
+
+D:/Computer/Code/C++/DataStructure/Chapter2/LNode/LNode.h
+../../Def.h
+D:/Computer/Code/C++/DataStructure/Def.h
+
+D:/Computer/Code/C++/DataStructure/Chapter2/SeqList/SeqList.h
+../../Def.h
+D:/Computer/Code/C++/DataStructure/Def.h
+
 D:/Computer/Code/C++/DataStructure/Chapter2/SqList/SqList.cpp
 SqList.h
 D:/Computer/Code/C++/DataStructure/Chapter2/SqList/SqList.h
@@ -23,4 +35,14 @@ cstring
 -
 cmath
 -
+
+D:/Computer/Code/C++/DataStructure/main.cpp
+Def.h
+D:/Computer/Code/C++/DataStructure/Def.h
+Chapter2/SqList/SqList.h
+D:/Computer/Code/C++/DataStructure/Chapter2/SqList/SqList.h
+Chapter2/SeqList/SeqList.h
+D:/Computer/Code/C++/DataStructure/Chapter2/SeqList/SeqList.h
+Chapter2/LNode/LNode.h
+D:/Computer/Code/C++/DataStructure/Chapter2/LNode/LNode.h
 

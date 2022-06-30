@@ -92,11 +92,31 @@ bool InitLinkList(LinkList &L) {
 }
 
 void TraverseLinkList(LinkList L) {
+    if (L->next == nullptr) {
+        printf("空链表!\n");
+        return;
+    }
 
+    // 从第一个有效节点开始遍历
+    LNode *p = L->next;
+
+    // 每读完一个结点的值就向后跳
+    while (p) {
+        printf("%d ", p->data);
+
+        // 向后跳
+        p = L->next;
+    }
 }
 
 
-void TestSeqLinkList() {
+void TestLinkList() {
     LinkList L;
+
+    HeadInsertBuildLinkList(L);
+
+
+
+    TraverseLinkList(L);
 
 }
