@@ -105,7 +105,7 @@ void TraverseLinkList(LinkList L) {
         printf("%d ", p->data);
 
         // 向后跳
-        p = L->next;
+        p = p->next;
     }
 }
 
@@ -113,10 +113,9 @@ void TraverseLinkList(LinkList L) {
 void TestLinkList() {
     LinkList L;
 
+    // 头插法建立单链表
     HeadInsertBuildLinkList(L);
 
-
-
+    // 遍历整个链表
     TraverseLinkList(L);
-
 }
