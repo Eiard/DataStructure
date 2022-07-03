@@ -63,6 +63,43 @@ LinkList HeadInsertBuildHeadLinkList(LinkList &L) {
     return L;
 }
 
+LinkList TailInsertBuildHeadLinkList(LinkList &L) {
+    ElemType x;
+
+    // 动态分配头结点地址
+    L = (LinkList) malloc(sizeof(LNode));
+
+    if (L == nullptr) {
+        return nullptr;
+    }
+
+    // r为表尾指针(辅助指针)
+    LNode *s, *r = L;
+    // 输入结点的值
+    scanf("%d", &x);
+
+    while (x != 9999) {  // 输入9999 表示结束
+        // 创建一个结点并且动态分配内存空间
+        s = (LNode *) malloc(sizeof(LNode));
+
+        // 输入的值存入新的结点
+        s->data = x;
+
+        // 辅助指针,始终指向尾部结点 (原先的尾结点指向新的结点)
+        r->next = s;
+
+        // 随着新添加的结点 , 辅助指针r 后移
+        r = s;
+        scanf("%d", &x);
+    }
+
+    // 给最后一个结点的下一个结点赋值为空
+    r->next = nullptr;
+
+    return L;
+}
+
+
 bool HeadLinkListInsert(LinkList &L, int i, ElemType e) {
     if (i < 1) {
         return false;
@@ -131,23 +168,27 @@ bool NoHeadLinkListInsert(LinkList &L, int i, ElemType e) {
     //-----------------------------------------------------------------
     //  下面是在第i-1个结点不为空的情况下,在其后面插入一个结点
 
+
+    // 可以封装为
+    return InsertNextLNode(p, e);
+
     // 第 i-1 个结点如果为空则说明不能在第i个插入一个结点
-    if (p == nullptr) {
-        return false;
-    }
+    //if (p == nullptr) {
+    //    return false;
+    //}
 
     // 生成一个新结点
-    LNode *s = (LNode *) malloc(sizeof(LNode));
+    //LNode *s = (LNode *) malloc(sizeof(LNode));
 
-    s->data = e;
+    //s->data = e;
 
     // 新结点s的下一个结点 变为 原先的第i个结点
-    s->next = p->next;
+    //s->next = p->next;
 
     // 第i-1个结点的下一个结点变为 新结点s
-    p->next = s;
+    //p->next = s;
 
-    return true;
+    //return true;
 }
 
 bool InsertNextLNode(LNode *p, ElemType e) {
@@ -168,7 +209,7 @@ bool InsertNextLNode(LNode *p, ElemType e) {
     return true;
 }
 
-bool InsertPriorNode(LNode *p, LNode *s) {
+bool InsertPriorLNode(LNode *p, LNode *s) {
     if (p == nullptr && s == nullptr) {
         return false;
     }
@@ -188,51 +229,73 @@ bool InsertPriorNode(LNode *p, LNode *s) {
     //      p -> p->next
     //      p -> s -> p->next
 
-    ElemType temp = p->data;
 
-    p->data = s->data;
-
-    s->data = temp;
+    // 逻辑前插 交换数据data部分
+    // ElemType temp = p->data;
+    // p->data = s->data;
+    // s->data = temp;
+    Swap(p->data, s->data);
 
     return true;
 }
 
-LinkList TailInsertBuildHeadLinkList(LinkList &L) {
-    ElemType x;
-
-    // 动态分配头结点地址
-    L = (LinkList) malloc(sizeof(LNode));
-
-    if (L == nullptr) {
-        return nullptr;
+bool HeadLinkListIDelete(LinkList &L, int i, ElemType e) {
+    if (i < 1) {
+        return false;
     }
 
-    // r为表尾指针(辅助指针)
-    LNode *s, *r = L;
-    // 输入结点的值
-    scanf("%d", &x);
+    LNode *p; // 指针p指向当前扫描到的结点
+    int j = 0; // 当前p指向的是第几个结点(索引)
+    p = L; // L指向头结点,头结点是第0个结点(不存数据)
 
-    while (x != 9999) {  // 输入9999 表示结束
-        // 创建一个结点并且动态分配内存空间
-        s = (LNode *) malloc(sizeof(LNode));
-
-        // 输入的值存入新的结点
-        s->data = x;
-
-        // 辅助指针,始终指向尾部结点 (原先的尾结点指向新的结点)
-        r->next = s;
-
-        // 随着新添加的结点 , 辅助指针r 后移
-        r = s;
-        scanf("%d", &x);
+    // 循环找到第i-1个结点(要删除的结点的前一个结点)
+    while (p != nullptr && j < i - 1) {
+        p = p->next;
+        j++;
     }
 
-    // 给最后一个结点的下一个结点赋值为空
-    r->next = nullptr;
+    if (p == nullptr) {
+        return false;
+    }
 
-    return L;
+    if (p->next == nullptr) {
+        return false;
+    }
+
+    // 令q指向被删除的结点
+    LNode *q = p->next;
+
+    // 用e返回元素的值
+    e = q->data;
+
+    // 将*q结点从链中"断开"
+    p->next = q->next;
+
+    // 释放结点内存空间
+    free(q);
+
+    return true;
 }
 
+bool HeadLinkListDeleteNode(LNode *p) {
+    if (p == nullptr) {
+        return false;
+    }
+
+    // 获取下一个结点的地址
+    LNode *q = p->next;
+
+    // 将下一个结点的数据存到当前结点(逻辑删除) 相当于删除了一下个结点,并且将下一个结点的数据转移到当前节点
+    p->data = p->next->data;
+
+    // 将q从链中断开,让p的下一个结点指向下一个结点的下一个结点
+    p->next = q->next;
+
+    // 释放内存
+    free(q);
+
+    return true;
+}
 
 LNode *GetElemHeadLinkList(LinkList L, int i) {
     // 计数器

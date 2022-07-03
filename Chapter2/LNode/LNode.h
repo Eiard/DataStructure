@@ -86,7 +86,6 @@ bool HeadLinkListInsert(LinkList &L, int i, ElemType e);
  */
 bool NoHeadLinkListInsert(LinkList &L, int i, ElemType e);
 
-
 /**
  * 在指定结点进行后插操作
  *              时间复杂度 = O(1)
@@ -102,7 +101,28 @@ bool InsertNextLNode(LNode *p, ElemType e);
  * @param s
  * @return
  */
-bool InsertPriorNode(LNode *p, LNode *s);
+bool InsertPriorLNode(LNode *p, LNode *s);
+
+/**
+ * 删除下标为i位置的结点,并且通过引用返回删除元素的值
+ *          最好情况(删除第一个结点): 时间复杂度 = O(1)
+ *          最坏情况(删除最后一个结点): 时间复杂度 = O(n)
+ *              平均时间复杂度 = O(n)
+ * @param L
+ * @param i
+ * @param e
+ * @return
+ */
+bool HeadLinkListIDelete(LinkList &L, int i, ElemType e);
+
+/**
+ * 直接删除指定结点
+ * 将下一个结点的数据存到当前结点(逻辑删除) 相当于删除了一下个结点,并且将下一个结点的数据转移到当前节点
+ *      时间复杂度 = O(n)
+ * @param p
+ * @return
+ */
+bool HeadLinkListDeleteNode(LNode *p);
 
 /**
  * 带头结点单链表按序号查找结点:
