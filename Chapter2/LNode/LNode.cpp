@@ -63,6 +63,140 @@ LinkList HeadInsertBuildHeadLinkList(LinkList &L) {
     return L;
 }
 
+bool HeadLinkListInsert(LinkList &L, int i, ElemType e) {
+    if (i < 1) {
+        return false;
+    }
+    LNode *p; // 指针p指向当前扫描到的结点
+    int j = 0; // 当前p指向的是第几个结点(索引)
+    p = L; // L指向头结点,头结点是第0个结点(不存数据)
+
+    // 循环找到第i-1个结点(要插入的目标节点)
+    while (p != nullptr && j < i - 1) {
+        p = p->next;
+        j++;
+    }
+
+    //  上面是找到第i-1个结点
+    //-----------------------------------------------------------------
+    //  下面是在第i-1个结点不为空的情况下,在其后面插入一个结点
+
+    // 第 i-1 个结点如果为空则说明不能在第i个插入一个结点
+    if (p == nullptr) {
+        return false;
+    }
+
+    // 生成一个新结点
+    LNode *s = (LNode *) malloc(sizeof(LNode));
+
+    s->data = e;
+
+    // 新结点s的下一个结点 变为 原先的第i个结点
+    s->next = p->next;
+
+    // 第i-1个结点的下一个结点变为 新结点s
+    p->next = s;
+
+    return true;
+}
+
+bool NoHeadLinkListInsert(LinkList &L, int i, ElemType e) {
+    if (i < 1) {
+        return false;
+    }
+
+    // 对于头结点的插入做特殊处理 (与带头结点插入主要区别)
+    if (i == 1) {
+        // 生成一个新结点
+        LNode *s = (LNode *) malloc(sizeof(LNode));
+        // 给第一个结点存入数据
+        s->data = e;
+        // 替换原先无头链表
+        L = s;
+        return true;
+    }
+
+    // 对除头结点外的其他结点
+    LNode *p; // 指针p指向当前扫描到的结点
+    int j = 1; // 当前p指向的是第几个结点(索引) (无头结点的j = 1 从1开始, 带头结点的j=0 从0开始)
+    p = L; // L指向头结点,头结点是第0个结点(不存数据)
+
+    // 循环找到第i-1个结点(要插入的目标节点)
+    while (p != nullptr && j < i - 1) {
+        p = p->next;
+        j++;
+    }
+
+    //  上面是找到第i-1个结点
+    //-----------------------------------------------------------------
+    //  下面是在第i-1个结点不为空的情况下,在其后面插入一个结点
+
+    // 第 i-1 个结点如果为空则说明不能在第i个插入一个结点
+    if (p == nullptr) {
+        return false;
+    }
+
+    // 生成一个新结点
+    LNode *s = (LNode *) malloc(sizeof(LNode));
+
+    s->data = e;
+
+    // 新结点s的下一个结点 变为 原先的第i个结点
+    s->next = p->next;
+
+    // 第i-1个结点的下一个结点变为 新结点s
+    p->next = s;
+
+    return true;
+}
+
+bool InsertNextLNode(LNode *p, ElemType e) {
+    if (p == nullptr) {
+        return false;
+    }
+    LNode *s = (LNode *) malloc(sizeof(LNode));
+
+    if (s == nullptr) {
+        return false;
+    }
+    s->data = e;
+
+    s->next = p->next;
+
+    p->next = s;
+
+    return true;
+}
+
+bool InsertPriorNode(LNode *p, LNode *s) {
+    if (p == nullptr && s == nullptr) {
+        return false;
+    }
+
+    // 目的要实现s 插入到 p 前面
+    //      实现方式:
+    //          可以先将s插入到p后面
+    //          然后交换s和p里面的数据data 进行逻辑前插
+
+    // 新结点s 的下一条先换成p原先的下一条
+    s->next = p->next;
+
+    // p指向新结点s
+    p->next = s;
+
+    // 插入过程
+    //      p -> p->next
+    //      p -> s -> p->next
+
+    ElemType temp = p->data;
+
+    p->data = s->data;
+
+    s->data = temp;
+
+    return true;
+}
+
 LinkList TailInsertBuildHeadLinkList(LinkList &L) {
     ElemType x;
 
@@ -98,6 +232,7 @@ LinkList TailInsertBuildHeadLinkList(LinkList &L) {
 
     return L;
 }
+
 
 LNode *GetElemHeadLinkList(LinkList L, int i) {
     // 计数器

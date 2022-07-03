@@ -57,6 +57,54 @@ LinkList TailInsertBuildHeadLinkList(LinkList &L);
 
 
 /**
+ * 带头结点链表(默认)
+ *      (插入到第i-1个下标结点的后面,即新结点成为第i个结点)
+ *      最好的情况:
+ *              插到表头,时间复杂度 = O(1)
+ *      最坏的情况:
+ *              插到表尾,时间复杂度 = O(n)
+ *      平均时间复杂度 = O(n)
+ * @param L
+ * @param i
+ * @param e
+ * @return
+ */
+bool HeadLinkListInsert(LinkList &L, int i, ElemType e);
+
+/**
+ * 无头结点链表
+ *      (插入到第i-1个下标结点的后面,即新结点成为第i个结点)
+ *      最好的情况:
+ *              插到表头,时间复杂度 = O(1)
+ *      最坏的情况:
+ *              插到表尾,时间复杂度 = O(n)
+ *      平均时间复杂度 = O(n)
+ * @param L
+ * @param i
+ * @param e
+ * @return
+ */
+bool NoHeadLinkListInsert(LinkList &L, int i, ElemType e);
+
+
+/**
+ * 在指定结点进行后插操作
+ *              时间复杂度 = O(1)
+ * @param p
+ * @return
+ */
+bool InsertNextLNode(LNode *p, ElemType e);
+
+/**
+ * 在指定结点进行前插操作,不是物理前插(逻辑前插)
+ *              时间复杂度 = O(1)
+ * @param p
+ * @param s
+ * @return
+ */
+bool InsertPriorNode(LNode *p, LNode *s);
+
+/**
  * 带头结点单链表按序号查找结点:
  *      LNode* 强调是一个节点
  *      LinkList 强调是一个链表
