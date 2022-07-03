@@ -11,7 +11,7 @@
 
 #include "LNode.h"
 
-bool InitLinkList(LinkList &L) {
+bool InitHeadLinkList(LinkList &L) {
     // 初始化头结点
     L = (LNode *) malloc(sizeof(LNode));
 
@@ -27,7 +27,13 @@ bool InitLinkList(LinkList &L) {
 }
 
 
-LinkList HeadInsertBuildLinkList(LinkList &L) {
+bool InitNoHeadLinkList(LinkList &L) {
+    L = nullptr;
+    return true;
+}
+
+
+LinkList HeadInsertBuildHeadLinkList(LinkList &L) {
     LNode *s;
     ElemType x;
 
@@ -57,7 +63,7 @@ LinkList HeadInsertBuildLinkList(LinkList &L) {
     return L;
 }
 
-LinkList TailInsertBuildLinkList(LinkList &L) {
+LinkList TailInsertBuildHeadLinkList(LinkList &L) {
     ElemType x;
 
     // 动态分配头结点地址
@@ -93,7 +99,7 @@ LinkList TailInsertBuildLinkList(LinkList &L) {
     return L;
 }
 
-LNode *GetElemLinkList(LinkList L, int i) {
+LNode *GetElemHeadLinkList(LinkList L, int i) {
     // 计数器
     int j = 1;
 
@@ -122,8 +128,11 @@ LNode *GetElemLinkList(LinkList L, int i) {
 
 }
 
+LNode *LocateElemHeadLinkList(LinkList L, ElemType e) {
+    return nullptr;
+}
 
-void TraverseLinkList(LinkList L) {
+void TraverseHeadLinkList(LinkList L) {
     if (L->next == nullptr) {
         printf("空链表!\n");
         return;
@@ -141,16 +150,32 @@ void TraverseLinkList(LinkList L) {
     }
 }
 
+bool NoHeadLinkListIsEmpty(LinkList L) {
+    if (L == nullptr) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+bool HeadLinkListIsEmpty(LinkList L) {
+    if (L->next == nullptr) {
+        return true;
+    } else {
+        return false;
+    }
+}
 
 void TestLinkList() {
     LinkList L;
 
-    // 头插法建立单链表
-    // HeadInsertBuildLinkList(L);
+    // 头插法建立带头结点单链表
+    // HeadInsertBuildHeadLinkList(L);
 
-    // 尾插法建立单链表
-    TailInsertBuildLinkList(L);
+    // 尾插法建立带头结点单链表
+    TailInsertBuildHeadLinkList(L);
 
-    // 遍历整个链表
-    TraverseLinkList(L);
+    // 遍历整个带头结点链表
+    TraverseHeadLinkList(L);
 }
+

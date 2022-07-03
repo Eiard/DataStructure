@@ -20,14 +20,21 @@ typedef struct LNode {
 } LNode, *LinkList;
 
 /**
- * 初始化单链表
+ * 初始化带头结点单链表
  * @param L
  * @return
  */
-bool InitLinkList(LinkList &L);
+bool InitHeadLinkList(LinkList &L);
 
 /**
- * 采用头插法建立单链表
+ * 初始化无头结点单链表
+ * @param L
+ * @return
+ */
+bool InitNoHeadLinkList(LinkList &L);
+
+/**
+ * 采用头插法建立带头结点单链表
  * 读入数据的顺序与生成的链表中的元素的顺序是相反的
  *      每个节点插入的时间复杂度 = O(1)
  *      设单链表总长度为n       建立一个单链表总时间复杂度为 = O(n)
@@ -35,10 +42,10 @@ bool InitLinkList(LinkList &L);
  * @param L
  * @return
  */
-LinkList HeadInsertBuildLinkList(LinkList &L);
+LinkList HeadInsertBuildHeadLinkList(LinkList &L);
 
 /**
- * 采用尾插法建立单链表
+ * 采用尾插法建立带头结点单链表
  * 读入数据的顺序与生成的链表中的元素的顺序是相同的
  *      使用了辅助指针r(始终指向末尾,并且新结点假如时,跟着后移)
  *      每个节点插入的时间复杂度 = O(1)
@@ -46,11 +53,11 @@ LinkList HeadInsertBuildLinkList(LinkList &L);
  * @param L
  * @return
  */
-LinkList TailInsertBuildLinkList(LinkList &L);
+LinkList TailInsertBuildHeadLinkList(LinkList &L);
 
 
 /**
- * 按序号查找结点:
+ * 带头结点单链表按序号查找结点:
  *      LNode* 强调是一个节点
  *      LinkList 强调是一个链表
  *      时间复杂度为 O(n)
@@ -58,23 +65,35 @@ LinkList TailInsertBuildLinkList(LinkList &L);
  * @param i
  * @return  节点地址
  */
-LNode *GetElemLinkList(LinkList L, int i);
+LNode *GetElemHeadLinkList(LinkList L, int i);
 
 /**
- * 按值查找结点:
+ * 带头结点单链表按值查找结点:
  *      依次向后移动并且数值比较
  *      时间复杂度 = O(n)
  * @param L
  * @param e
  * @return
  */
-LNode *LocateElemLinkList(LinkList L, ElemType e);
+LNode *LocateElemHeadLinkList(LinkList L, ElemType e);
 
 /**
- * 遍历单链表
+ * 遍历带头结点单链表
  * @param L
  */
-void TraverseLinkList(LinkList L);
+void TraverseHeadLinkList(LinkList L);
+
+/**
+ * 判断无头结点的单链表是否为空
+ * @param L
+ */
+bool NoHeadLinkListIsEmpty(LinkList L);
+
+/**
+ * 判断有头结点的单链表是否位空
+ * @param L
+ */
+bool HeadLinkListIsEmpty(LinkList L);
 
 /**
  * 功能测试函数
