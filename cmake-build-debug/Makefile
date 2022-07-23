@@ -142,6 +142,33 @@ DataStructure/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/build
 .PHONY : DataStructure/fast
 
+Chapter2/DNode/DNode.obj: Chapter2/DNode/DNode.cpp.obj
+
+.PHONY : Chapter2/DNode/DNode.obj
+
+# target to build an object file
+Chapter2/DNode/DNode.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter2/DNode/DNode.cpp.obj
+.PHONY : Chapter2/DNode/DNode.cpp.obj
+
+Chapter2/DNode/DNode.i: Chapter2/DNode/DNode.cpp.i
+
+.PHONY : Chapter2/DNode/DNode.i
+
+# target to preprocess a source file
+Chapter2/DNode/DNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter2/DNode/DNode.cpp.i
+.PHONY : Chapter2/DNode/DNode.cpp.i
+
+Chapter2/DNode/DNode.s: Chapter2/DNode/DNode.cpp.s
+
+.PHONY : Chapter2/DNode/DNode.s
+
+# target to generate assembly for a file
+Chapter2/DNode/DNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter2/DNode/DNode.cpp.s
+.PHONY : Chapter2/DNode/DNode.cpp.s
+
 Chapter2/LNode/LNode.obj: Chapter2/LNode/LNode.cpp.obj
 
 .PHONY : Chapter2/LNode/LNode.obj
@@ -286,6 +313,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... DataStructure
+	@echo ... Chapter2/DNode/DNode.obj
+	@echo ... Chapter2/DNode/DNode.i
+	@echo ... Chapter2/DNode/DNode.s
 	@echo ... Chapter2/LNode/LNode.obj
 	@echo ... Chapter2/LNode/LNode.i
 	@echo ... Chapter2/LNode/LNode.s

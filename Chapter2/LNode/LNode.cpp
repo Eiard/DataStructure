@@ -3,7 +3,7 @@
     @projectName:   DataStructure 
     @FileName:      LNode
     @author:        30671
-    @description:   TODO 
+    @description:   DONE : 单链表
     @date:          2022/6/28
     @version:       1.0
 */
@@ -104,37 +104,43 @@ bool HeadLinkListInsert(LinkList &L, int i, ElemType e) {
     if (i < 1) {
         return false;
     }
-    LNode *p; // 指针p指向当前扫描到的结点
-    int j = 0; // 当前p指向的是第几个结点(索引)
-    p = L; // L指向头结点,头结点是第0个结点(不存数据)
+    // 封装后直接获得i-1个结点的地址
+    LNode *p = GetElemHeadLinkList(L, i - 1); // 指针p指向当前扫描到的结点
 
-    // 循环找到第i-1个结点(要插入的目标节点)
-    while (p != nullptr && j < i - 1) {
-        p = p->next;
-        j++;
-    }
+    //    int j = 0; // 当前p指向的是第几个结点(索引)
+    //    p = L; // L指向头结点,头结点是第0个结点(不存数据)
+    //
+    //    // 循环找到第i-1个结点(要插入的目标节点)
+    //    while (p != nullptr && j < i - 1) {
+    //        p = p->next;
+    //        j++;
+    //    }
 
     //  上面是找到第i-1个结点
     //-----------------------------------------------------------------
     //  下面是在第i-1个结点不为空的情况下,在其后面插入一个结点
 
     // 第 i-1 个结点如果为空则说明不能在第i个插入一个结点
-    if (p == nullptr) {
-        return false;
-    }
 
-    // 生成一个新结点
-    LNode *s = (LNode *) malloc(sizeof(LNode));
+    // 可以封装为
+    return InsertNextLNode(p, e);
 
-    s->data = e;
-
-    // 新结点s的下一个结点 变为 原先的第i个结点
-    s->next = p->next;
-
-    // 第i-1个结点的下一个结点变为 新结点s
-    p->next = s;
-
-    return true;
+    //    if (p == nullptr) {
+    //        return false;
+    //    }
+    //
+    //    // 生成一个新结点
+    //    LNode *s = (LNode *) malloc(sizeof(LNode));
+    //
+    //    s->data = e;
+    //
+    //    // 新结点s的下一个结点 变为 原先的第i个结点
+    //    s->next = p->next;
+    //
+    //    // 第i-1个结点的下一个结点变为 新结点s
+    //    p->next = s;
+    //
+    //    return true;
 }
 
 bool NoHeadLinkListInsert(LinkList &L, int i, ElemType e) {
@@ -200,10 +206,18 @@ bool InsertNextLNode(LNode *p, ElemType e) {
     if (s == nullptr) {
         return false;
     }
+
+    // 从p 的 后方插入
+    // p q   (插入s)
+    // p s q
+
+    // 先存数据
     s->data = e;
 
+    // s也指向p原先的下一个结点q
     s->next = p->next;
 
+    // 更新p的下一个结点为s
     p->next = s;
 
     return true;
@@ -219,6 +233,7 @@ bool InsertPriorLNode(LNode *p, LNode *s) {
     //          可以先将s插入到p后面
     //          然后交换s和p里面的数据data 进行逻辑前插
 
+
     // 新结点s 的下一条先换成p原先的下一条
     s->next = p->next;
 
@@ -231,9 +246,6 @@ bool InsertPriorLNode(LNode *p, LNode *s) {
 
 
     // 逻辑前插 交换数据data部分
-    // ElemType temp = p->data;
-    // p->data = s->data;
-    // s->data = temp;
     Swap(p->data, s->data);
 
     return true;
@@ -281,6 +293,11 @@ bool HeadLinkListDeleteNode(LNode *p) {
     if (p == nullptr) {
         return false;
     }
+    // p q q->next
+    // 假设要删除p
+    // 将p的下一个结点q的数据直接覆盖p的数据
+    // 然后再将p指向原先的q->next
+
 
     // 获取下一个结点的地址
     LNode *q = p->next;
@@ -327,7 +344,14 @@ LNode *GetElemHeadLinkList(LinkList L, int i) {
 }
 
 LNode *LocateElemHeadLinkList(LinkList L, ElemType e) {
-    return nullptr;
+    LNode *p = L->next;
+
+    // 找到值为e的结点停止
+    while (p != nullptr && p->data != e) {
+        p = p->next;
+    }
+
+    return p;
 }
 
 void TraverseHeadLinkList(LinkList L) {
@@ -362,6 +386,18 @@ bool HeadLinkListIsEmpty(LinkList L) {
     } else {
         return false;
     }
+}
+
+int GetLengthHeadLinkList(LinkList L) {
+    LNode *p = L->next;
+    int length = 0;
+    // 找到值为e的结点停止
+    while (p != nullptr) {
+        p = p->next;
+        length++;
+    }
+
+    return length;
 }
 
 void TestLinkList() {

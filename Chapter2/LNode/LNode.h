@@ -97,6 +97,7 @@ bool InsertNextLNode(LNode *p, ElemType e);
 /**
  * 在指定结点进行前插操作,不是物理前插(逻辑前插)
  *              时间复杂度 = O(1)
+ *              先后插 再交换数据
  * @param p
  * @param s
  * @return
@@ -119,6 +120,8 @@ bool HeadLinkListIDelete(LinkList &L, int i, ElemType e);
  * 直接删除指定结点
  * 将下一个结点的数据存到当前结点(逻辑删除) 相当于删除了一下个结点,并且将下一个结点的数据转移到当前节点
  *      时间复杂度 = O(n)
+ *      如果是最后一个结点
+ *          则只能从头结点遍历到最后一个结点的前一个结点才能释放最后一个结点
  * @param p
  * @return
  */
@@ -162,6 +165,13 @@ bool NoHeadLinkListIsEmpty(LinkList L);
  * @param L
  */
 bool HeadLinkListIsEmpty(LinkList L);
+
+/**
+ * 计算单链表的长度
+ * @param L
+ * @return
+ */
+int GetLengthHeadLinkList(LinkList L);
 
 /**
  * 功能测试函数

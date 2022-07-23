@@ -3,7 +3,7 @@
     @projectName:   DataStructure 
     @FileName:      SqList
     @author:        30671
-    @description:   DONE
+    @description:   DONE 顺序表基本操作
     @date:          2022/6/27
     @version:       1.0
 */

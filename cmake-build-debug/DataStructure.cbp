@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/Computer/Code/C++/DataStructure/Chapter2/DNode/DNode.cpp">
+			<Option target="DataStructure"/>
+		</Unit>
+		<Unit filename="D:/Computer/Code/C++/DataStructure/Chapter2/DNode/DNode.h">
+			<Option target="DataStructure"/>
+		</Unit>
 		<Unit filename="D:/Computer/Code/C++/DataStructure/Chapter2/LNode/LNode.cpp">
 			<Option target="DataStructure"/>
 		</Unit>

@@ -3,7 +3,7 @@
     @projectName:   DataStructure 
     @FileName:      SqList
     @author:        30671
-    @description:   DONE
+    @description:   DONE 顺序表基本操作
     @date:          2022/6/27
     @version:       1.0
 */
@@ -90,23 +90,31 @@ void TraverseSqList(SqList L) {
 
 
 void TestSqList() {
+    // 创建一个顺序表
     SqList L;
 
+    // 初始化结构体
     InitSqList(L);
 
+    // 插入两个元素
     InsertSqList(L, 1, 2);
     InsertSqList(L, 1, 3);
+
+    // 遍历顺序表
     TraverseSqList(L);
 
+    // 删除指定下标的元素并且返回到temp中
     int temp;
     if (DeleteSqList(L, 1, temp)) {
         TraverseSqList(L);
         printf("The num is %d\n", temp);
     }
 
+
     InsertSqList(L, 1, 6);
     TraverseSqList(L);
 
+    // 按照值查找元素下标
     printf("6 is The No.%d num\n", LocateElemSqList(L, 6));
 
 }

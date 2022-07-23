@@ -3,7 +3,7 @@
     @projectName:   DataStructure 
     @FileName:      SeqList
     @author:        30671
-    @description:   TODO 
+    @description:   DONE : 动态的顺序表
     @date:          2022/6/27
     @version:       1.0
 */
