@@ -92,6 +92,12 @@
 		<Unit filename="D:/Computer/Code/C++/DataStructure/Chapter2/LNode/LNode.h">
 			<Option target="DataStructure"/>
 		</Unit>
+		<Unit filename="D:/Computer/Code/C++/DataStructure/Chapter2/STNode/STNode.cpp">
+			<Option target="DataStructure"/>
+		</Unit>
+		<Unit filename="D:/Computer/Code/C++/DataStructure/Chapter2/STNode/STNode.h">
+			<Option target="DataStructure"/>
+		</Unit>
 		<Unit filename="D:/Computer/Code/C++/DataStructure/Chapter2/SeqList/SeqList.cpp">
 			<Option target="DataStructure"/>
 		</Unit>

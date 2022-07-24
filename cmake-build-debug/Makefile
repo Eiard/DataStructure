@@ -196,6 +196,33 @@ Chapter2/LNode/LNode.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter2/LNode/LNode.cpp.s
 .PHONY : Chapter2/LNode/LNode.cpp.s
 
+Chapter2/STNode/STNode.obj: Chapter2/STNode/STNode.cpp.obj
+
+.PHONY : Chapter2/STNode/STNode.obj
+
+# target to build an object file
+Chapter2/STNode/STNode.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter2/STNode/STNode.cpp.obj
+.PHONY : Chapter2/STNode/STNode.cpp.obj
+
+Chapter2/STNode/STNode.i: Chapter2/STNode/STNode.cpp.i
+
+.PHONY : Chapter2/STNode/STNode.i
+
+# target to preprocess a source file
+Chapter2/STNode/STNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter2/STNode/STNode.cpp.i
+.PHONY : Chapter2/STNode/STNode.cpp.i
+
+Chapter2/STNode/STNode.s: Chapter2/STNode/STNode.cpp.s
+
+.PHONY : Chapter2/STNode/STNode.s
+
+# target to generate assembly for a file
+Chapter2/STNode/STNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter2/STNode/STNode.cpp.s
+.PHONY : Chapter2/STNode/STNode.cpp.s
+
 Chapter2/SeqList/SeqList.obj: Chapter2/SeqList/SeqList.cpp.obj
 
 .PHONY : Chapter2/SeqList/SeqList.obj
@@ -319,6 +346,9 @@ help:
 	@echo ... Chapter2/LNode/LNode.obj
 	@echo ... Chapter2/LNode/LNode.i
 	@echo ... Chapter2/LNode/LNode.s
+	@echo ... Chapter2/STNode/STNode.obj
+	@echo ... Chapter2/STNode/STNode.i
+	@echo ... Chapter2/STNode/STNode.s
 	@echo ... Chapter2/SeqList/SeqList.obj
 	@echo ... Chapter2/SeqList/SeqList.i
 	@echo ... Chapter2/SeqList/SeqList.s

@@ -29,7 +29,16 @@ typedef struct DNode {
 bool InitDLinkList(DLinkList &L);
 
 /**
+ * 初始化循环双链表
+ * @param L
+ * @return
+ */
+
+bool InitCDLinkList(DLinkList &L);
+
+/**
  * 将结点s插入到p结点之后
+ *      应用在循环双链表中也成立
  * @param p
  * @param s
  * @return

@@ -20,6 +20,18 @@ bool InitDLinkList(DLinkList &L) {
     return true;
 }
 
+bool InitCDLinkList(DLinkList &L) {
+    L = (DLinkList) malloc(sizeof(DNode));
+    if (L == nullptr) {
+        return false;
+    }
+    // 与普通双链表的区别是
+    L->prior = L;
+    L->next = L;
+
+    return true;
+}
+
 bool InsertNextDNode(DNode *p, DNode *s) {
     // 原先的***  p <=> p->next ****
     // 插入到p之后 变为 *** p <=> s <=> p->next ***

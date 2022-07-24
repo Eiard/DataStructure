@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "D:/Computer/Code/C++/DataStructure/Chapter2/DNode/DNode.cpp" "D:/Computer/Code/C++/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/Chapter2/DNode/DNode.cpp.obj"
   "D:/Computer/Code/C++/DataStructure/Chapter2/LNode/LNode.cpp" "D:/Computer/Code/C++/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/Chapter2/LNode/LNode.cpp.obj"
+  "D:/Computer/Code/C++/DataStructure/Chapter2/STNode/STNode.cpp" "D:/Computer/Code/C++/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/Chapter2/STNode/STNode.cpp.obj"
   "D:/Computer/Code/C++/DataStructure/Chapter2/SeqList/SeqList.cpp" "D:/Computer/Code/C++/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/Chapter2/SeqList/SeqList.cpp.obj"
   "D:/Computer/Code/C++/DataStructure/Chapter2/SqList/SqList.cpp" "D:/Computer/Code/C++/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/Chapter2/SqList/SqList.cpp.obj"
   "D:/Computer/Code/C++/DataStructure/Def.cpp" "D:/Computer/Code/C++/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/Def.cpp.obj"
