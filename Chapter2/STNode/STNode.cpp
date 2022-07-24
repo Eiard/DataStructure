@@ -8,5 +8,9 @@
     @version:       1.0
 */
 
+void TestSLinkList() {
+
+
+}
 
 #include "STNode.h"

@@ -33,4 +33,9 @@ typedef struct {
  *      typedef struct Node SLinkList[StaticMaxSize];  顺便用SLinkList定义一个长度为MaxSize的Node型数组
  */
 
+/**
+ * 功能测试函数
+ */
+void TestSLinkList();
+
 #endif //DATASTRUCTURE_STNODE_H
