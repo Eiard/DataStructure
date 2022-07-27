@@ -44,6 +44,14 @@ bool Push(SqStack &S, ElemType x);
  */
 bool Pop(SqStack &S, ElemType &x);
 
+/**
+ * 读取栈顶元素
+ * @param S
+ * @param x
+ * @return
+ */
+bool GetTop(SqStack S, ElemType &x);
+
 
 /**
  * 栈测试函数

@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/DataStructure.dir/Chapter2/STNode/STNode.cpp.obj"
   "CMakeFiles/DataStructure.dir/Chapter2/SeqList/SeqList.cpp.obj"
   "CMakeFiles/DataStructure.dir/Chapter2/SqList/SqList.cpp.obj"
+  "CMakeFiles/DataStructure.dir/Chapter3/ShStack/ShStack.cpp.obj"
   "CMakeFiles/DataStructure.dir/Chapter3/SqStack/SqStack.cpp.obj"
   "CMakeFiles/DataStructure.dir/Def.cpp.obj"
   "CMakeFiles/DataStructure.dir/main.cpp.obj"

@@ -31,10 +31,21 @@ bool Pop(SqStack &S, ElemType &x) {
         return false;
     }
 
-    // 先取出元素 后减一
+    // 先取出元素 后减一 (只进行了逻辑删除)
     x = S.data[S.top--];
     return true;
 }
+
+bool GetTop(SqStack S, ElemType &x) {
+    if (S.top == -1) {
+        return false;
+    }
+
+    // 先读取元素
+    x = S.data[S.top];
+    return true;
+}
+
 
 void TestSqStack() {
     SqStack S;  // 声明一个顺序栈(分配空间)
