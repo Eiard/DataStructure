@@ -37,8 +37,22 @@ void InitSqStack(SqStack &S);
 bool Push(SqStack &S, ElemType x);
 
 /**
+ * 从栈中Pop出一个元素
+ * @param S
+ * @param x
+ * @return
+ */
+bool Pop(SqStack &S, ElemType &x);
+
+
+/**
  * 栈测试函数
  */
 void TestSqStack();
+
+
+
+
+
 
 #endif //DATASTRUCTURE_SQSTACK_H

@@ -26,6 +26,15 @@ bool Push(SqStack &S, ElemType x) {
     return true;
 }
 
+bool Pop(SqStack &S, ElemType &x) {
+    if (S.top == -1) {
+        return false;
+    }
+
+    // 先取出元素 后减一
+    x = S.data[S.top--];
+    return true;
+}
 
 void TestSqStack() {
     SqStack S;  // 声明一个顺序栈(分配空间)
