@@ -37,8 +37,12 @@ bool EnSqQueue(SqQueue &Q, ElemType x) {
 
     // 存入数据
     Q.data[Q.rear] = x;
-    // 取余 (取模)
-    Q.rear = (Q.rear + 1) % MaxSize;
+
+    // 调用方法宏
+    Q.rear = ASC_MODULO_OPERATION(Q.rear, MaxSize);
+
+    //    取余 (取模)
+    //    Q.rear = (Q.rear + 1) % MaxSize;
 
     return true;
 }
@@ -52,7 +56,7 @@ bool DeSqQueue(SqQueue &Q, ElemType &x) {
     x = Q.data[Q.front];
 
     // 调用方法宏
-    //    Q.front = ASC_MO(Q.front, MaxSize);
+    //    Q.front = ASC_MODULO_OPERATION(Q.front, MaxSize);
 
     Q.front = (Q.front + 1) % MaxSize;
 
