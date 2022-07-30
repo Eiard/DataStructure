@@ -116,6 +116,12 @@
 		<Unit filename="D:/Computer/Code/C++/DataStructure/Chapter3/ShStack/ShStack.h">
 			<Option target="DataStructure"/>
 		</Unit>
+		<Unit filename="D:/Computer/Code/C++/DataStructure/Chapter3/SqQueue/SqQueue.cpp">
+			<Option target="DataStructure"/>
+		</Unit>
+		<Unit filename="D:/Computer/Code/C++/DataStructure/Chapter3/SqQueue/SqQueue.h">
+			<Option target="DataStructure"/>
+		</Unit>
 		<Unit filename="D:/Computer/Code/C++/DataStructure/Chapter3/SqStack/SqStack.cpp">
 			<Option target="DataStructure"/>
 		</Unit>

@@ -22,7 +22,7 @@ typedef struct {
     int top1;  //1号栈栈顶指针
 } ShStack;
 
-void InitStack(ShStack &S);
+void InitShStack(ShStack &S);
 
 bool ShStackIsFull(ShStack S);
 

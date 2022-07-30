@@ -304,6 +304,33 @@ Chapter3/ShStack/ShStack.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter3/ShStack/ShStack.cpp.s
 .PHONY : Chapter3/ShStack/ShStack.cpp.s
 
+Chapter3/SqQueue/SqQueue.obj: Chapter3/SqQueue/SqQueue.cpp.obj
+
+.PHONY : Chapter3/SqQueue/SqQueue.obj
+
+# target to build an object file
+Chapter3/SqQueue/SqQueue.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter3/SqQueue/SqQueue.cpp.obj
+.PHONY : Chapter3/SqQueue/SqQueue.cpp.obj
+
+Chapter3/SqQueue/SqQueue.i: Chapter3/SqQueue/SqQueue.cpp.i
+
+.PHONY : Chapter3/SqQueue/SqQueue.i
+
+# target to preprocess a source file
+Chapter3/SqQueue/SqQueue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter3/SqQueue/SqQueue.cpp.i
+.PHONY : Chapter3/SqQueue/SqQueue.cpp.i
+
+Chapter3/SqQueue/SqQueue.s: Chapter3/SqQueue/SqQueue.cpp.s
+
+.PHONY : Chapter3/SqQueue/SqQueue.s
+
+# target to generate assembly for a file
+Chapter3/SqQueue/SqQueue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter3/SqQueue/SqQueue.cpp.s
+.PHONY : Chapter3/SqQueue/SqQueue.cpp.s
+
 Chapter3/SqStack/SqStack.obj: Chapter3/SqStack/SqStack.cpp.obj
 
 .PHONY : Chapter3/SqStack/SqStack.obj
@@ -412,6 +439,9 @@ help:
 	@echo ... Chapter3/ShStack/ShStack.obj
 	@echo ... Chapter3/ShStack/ShStack.i
 	@echo ... Chapter3/ShStack/ShStack.s
+	@echo ... Chapter3/SqQueue/SqQueue.obj
+	@echo ... Chapter3/SqQueue/SqQueue.i
+	@echo ... Chapter3/SqQueue/SqQueue.s
 	@echo ... Chapter3/SqStack/SqStack.obj
 	@echo ... Chapter3/SqStack/SqStack.i
 	@echo ... Chapter3/SqStack/SqStack.s

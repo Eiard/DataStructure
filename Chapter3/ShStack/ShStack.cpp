@@ -12,7 +12,7 @@
 #include "ShStack.h"
 
 
-void InitStack(ShStack &S) {
+void InitShStack(ShStack &S) {
     S.top0 = -1;
     S.top1 = MaxSize;
 }
