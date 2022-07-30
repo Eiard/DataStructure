@@ -24,7 +24,10 @@ bool SqQueueIsEmpty(SqQueue Q) {
 }
 
 bool SqQueueIsFull(SqQueue Q) {
-    return false;
+    if ((Q.rear + 1) % MaxSize == Q.front)
+        return true;
+    else
+        return false;
 }
 
 
@@ -38,6 +41,22 @@ bool EnSqQueue(SqQueue &Q, ElemType x) {
     Q.rear = (Q.rear + 1) % MaxSize;
 
     return true;
+}
+
+
+bool DeSqQueue(SqQueue &Q, ElemType &x) {
+    if (SqQueueIsEmpty(Q))
+        return false;
+
+    // 取出队头的数据
+    x = Q.data[Q.front];
+
+    // 调用方法宏
+    //    Q.front = ASC_MO(Q.front, MaxSize);
+
+    Q.front = (Q.front + 1) % MaxSize;
+
+    return false;
 }
 
 void TestSqQueue() {

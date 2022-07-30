@@ -21,6 +21,8 @@ typedef struct {
     int front, rear;
 } SqQueue;
 
+// 增加一个 并取模
+#define ASC_MO(x,MaxSize) (x+1)%MaxSize
 
 /**
  * 初始化队列
@@ -38,6 +40,8 @@ bool SqQueueIsEmpty(SqQueue Q);
 
 /**
  * 判断队列是否为满
+ *      循环队列解决方案
+ *              1. 浪费一个存储单元 用于判断队列是否已满(实际上能存储数据的大小为 MaxSize-1 )
  * @param Q
  * @return
  */
@@ -45,11 +49,22 @@ bool SqQueueIsFull(SqQueue Q);
 
 /**
  * 入队操作
+ *      线状存储空间 形成循环
+ *      循环队列
  * @param Q
  * @param x
  * @return
  */
 bool EnSqQueue(SqQueue &Q, ElemType x);
+
+/**
+ * 出队操作
+ *      删除一个队头元素 并用x返回
+ * @param Q
+ * @param x
+ * @return
+ */
+bool DeSqQueue(SqQueue &Q, ElemType &x);
 
 /**
  * 测试静态队列函数
