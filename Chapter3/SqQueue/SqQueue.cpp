@@ -38,6 +38,7 @@ bool EnSqQueue(SqQueue &Q, ElemType x) {
     // 存入数据
     Q.data[Q.rear] = x;
 
+    // 尾操作
     // 调用方法宏
     Q.rear = ASC_MODULO_OPERATION(Q.rear, MaxSize);
 
@@ -55,12 +56,22 @@ bool DeSqQueue(SqQueue &Q, ElemType &x) {
     // 取出队头的数据
     x = Q.data[Q.front];
 
+    // 头操作
     // 调用方法宏
     //    Q.front = ASC_MODULO_OPERATION(Q.front, MaxSize);
 
     Q.front = (Q.front + 1) % MaxSize;
 
     return false;
+}
+
+bool GetHead(SqQueue Q, ElemType &x) {
+    if (SqQueueIsEmpty(Q))
+        return false;
+
+    // 取出队头的元素   (尾进头出)
+    x = Q.data[Q.front];
+    return true;
 }
 
 void TestSqQueue() {

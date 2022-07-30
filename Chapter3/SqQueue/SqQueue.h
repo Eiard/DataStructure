@@ -66,6 +66,14 @@ bool EnSqQueue(SqQueue &Q, ElemType x);
 bool DeSqQueue(SqQueue &Q, ElemType &x);
 
 /**
+ * 队列只能查询队头元素的值
+ * @param Q
+ * @param x
+ * @return
+ */
+bool GetHead(SqQueue Q,ElemType &x);
+
+/**
  * 测试静态队列函数
  */
 void TestSqQueue();
