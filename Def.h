@@ -22,6 +22,9 @@
  */
 typedef int ElemType;
 
+// 增加一个 并取模
+#define ASC_MO(x,MaxSize) (x+1)%MaxSize
+
 /**
  * 两数交换
  * @param e1
