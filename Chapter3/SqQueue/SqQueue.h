@@ -18,9 +18,42 @@
 
 typedef struct {
     ElemType data[MaxSize];
-    int front, rear;
-} SqQueue;
 
+    /**
+     *  注意判断rear的指向
+     *          指向队尾元素的后一个
+     *              添加时 先Q.data[rear] = x 再 rear++
+     *          指向队尾元素:
+     *              添加时 先rear++ 再Q.data[rear] = x
+     */
+    int front, rear;
+    /**
+     * 方案2:
+     * 队列的当前长度 用于判断队列是否已满 或 为空的 一种方案
+     *      入队时size++
+     *      出队时size--
+     */
+    //int size;
+
+    /**
+     * 方案3:
+     * 队列的当前长度 用于判断队列是否已满 或 为空的 一种方案
+     *      删除操作成功时,令tag = 0
+     *      插入操作成功时,令tag = 1
+     *
+     *      使用情况
+     *          只有删除操作,才可能导致队空
+     *              在删除时的判断条件:
+     *                      front==rear && tag==0 (上一个操作是删除 并且 删除后正好没有元素了)
+     *                          满足该条件则说明队列元素为空不能删除元素
+     *          只有插入操作,才可能导致队满
+     *              在插入时的判断条件:
+     *                      front==rear && tag==1 (上一个操作是插入 并且 插入之后正好满了)
+     *                          满足该情况则说明队满不能插入元素
+     */
+    //int tag;  // 最近进行的是删除/插入
+
+} SqQueue;
 
 
 /**
@@ -50,6 +83,10 @@ bool SqQueueIsFull(SqQueue Q);
  * 入队操作
  *      线状存储空间 形成循环
  *      循环队列
+ *          入队方式
+ *              Q.data[front]然后front++
+ *              front++ 然后 Q.data[front]
+ *
  * @param Q
  * @param x
  * @return
@@ -71,7 +108,14 @@ bool DeSqQueue(SqQueue &Q, ElemType &x);
  * @param x
  * @return
  */
-bool GetHead(SqQueue Q,ElemType &x);
+bool GetHead(SqQueue Q, ElemType &x);
+
+/**
+ * 计算队列的长度
+ * @param Q
+ * @return
+ */
+int SqQueueLength(SqQueue Q);
 
 /**
  * 测试静态队列函数

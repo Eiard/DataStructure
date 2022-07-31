@@ -74,6 +74,15 @@ bool GetHead(SqQueue Q, ElemType &x) {
     return true;
 }
 
+
+int SqQueueLength(SqQueue Q) {
+    // 假如rear = 2
+    // front = 3
+    // 则当前队列长度为  (2-3+10)%10 = 9
+
+    return (Q.rear - Q.front + MaxSize) % MaxSize;
+}
+
 void TestSqQueue() {
 
     // 声明一个队列(顺序存储)
