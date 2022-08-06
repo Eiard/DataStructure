@@ -110,6 +110,12 @@
 		<Unit filename="D:/Computer/Code/C++/DataStructure/Chapter2/SqList/SqList.h">
 			<Option target="DataStructure"/>
 		</Unit>
+		<Unit filename="D:/Computer/Code/C++/DataStructure/Chapter3/LinkQueue/LinkQueue.cpp">
+			<Option target="DataStructure"/>
+		</Unit>
+		<Unit filename="D:/Computer/Code/C++/DataStructure/Chapter3/LinkQueue/LinkQueue.h">
+			<Option target="DataStructure"/>
+		</Unit>
 		<Unit filename="D:/Computer/Code/C++/DataStructure/Chapter3/ShStack/ShStack.cpp">
 			<Option target="DataStructure"/>
 		</Unit>

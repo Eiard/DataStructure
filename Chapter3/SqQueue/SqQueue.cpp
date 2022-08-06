@@ -3,7 +3,7 @@
     @projectName:   DataStructure 
     @FileName:      SqQueue
     @author:        30671
-    @description:   DONE : 静态队列
+    @description:   DONE : 队列queue 静态队列
     @date:          2022/7/30
     @version:       1.0
 */

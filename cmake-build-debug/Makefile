@@ -277,6 +277,33 @@ Chapter2/SqList/SqList.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter2/SqList/SqList.cpp.s
 .PHONY : Chapter2/SqList/SqList.cpp.s
 
+Chapter3/LinkQueue/LinkQueue.obj: Chapter3/LinkQueue/LinkQueue.cpp.obj
+
+.PHONY : Chapter3/LinkQueue/LinkQueue.obj
+
+# target to build an object file
+Chapter3/LinkQueue/LinkQueue.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter3/LinkQueue/LinkQueue.cpp.obj
+.PHONY : Chapter3/LinkQueue/LinkQueue.cpp.obj
+
+Chapter3/LinkQueue/LinkQueue.i: Chapter3/LinkQueue/LinkQueue.cpp.i
+
+.PHONY : Chapter3/LinkQueue/LinkQueue.i
+
+# target to preprocess a source file
+Chapter3/LinkQueue/LinkQueue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter3/LinkQueue/LinkQueue.cpp.i
+.PHONY : Chapter3/LinkQueue/LinkQueue.cpp.i
+
+Chapter3/LinkQueue/LinkQueue.s: Chapter3/LinkQueue/LinkQueue.cpp.s
+
+.PHONY : Chapter3/LinkQueue/LinkQueue.s
+
+# target to generate assembly for a file
+Chapter3/LinkQueue/LinkQueue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter3/LinkQueue/LinkQueue.cpp.s
+.PHONY : Chapter3/LinkQueue/LinkQueue.cpp.s
+
 Chapter3/ShStack/ShStack.obj: Chapter3/ShStack/ShStack.cpp.obj
 
 .PHONY : Chapter3/ShStack/ShStack.obj
@@ -436,6 +463,9 @@ help:
 	@echo ... Chapter2/SqList/SqList.obj
 	@echo ... Chapter2/SqList/SqList.i
 	@echo ... Chapter2/SqList/SqList.s
+	@echo ... Chapter3/LinkQueue/LinkQueue.obj
+	@echo ... Chapter3/LinkQueue/LinkQueue.i
+	@echo ... Chapter3/LinkQueue/LinkQueue.s
 	@echo ... Chapter3/ShStack/ShStack.obj
 	@echo ... Chapter3/ShStack/ShStack.i
 	@echo ... Chapter3/ShStack/ShStack.s

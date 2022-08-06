@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "D:/Computer/Code/C++/DataStructure/Chapter2/STNode/STNode.cpp" "D:/Computer/Code/C++/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/Chapter2/STNode/STNode.cpp.obj"
   "D:/Computer/Code/C++/DataStructure/Chapter2/SeqList/SeqList.cpp" "D:/Computer/Code/C++/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/Chapter2/SeqList/SeqList.cpp.obj"
   "D:/Computer/Code/C++/DataStructure/Chapter2/SqList/SqList.cpp" "D:/Computer/Code/C++/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/Chapter2/SqList/SqList.cpp.obj"
+  "D:/Computer/Code/C++/DataStructure/Chapter3/LinkQueue/LinkQueue.cpp" "D:/Computer/Code/C++/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/Chapter3/LinkQueue/LinkQueue.cpp.obj"
   "D:/Computer/Code/C++/DataStructure/Chapter3/ShStack/ShStack.cpp" "D:/Computer/Code/C++/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/Chapter3/ShStack/ShStack.cpp.obj"
   "D:/Computer/Code/C++/DataStructure/Chapter3/SqQueue/SqQueue.cpp" "D:/Computer/Code/C++/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/Chapter3/SqQueue/SqQueue.cpp.obj"
   "D:/Computer/Code/C++/DataStructure/Chapter3/SqStack/SqStack.cpp" "D:/Computer/Code/C++/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/Chapter3/SqStack/SqStack.cpp.obj"
