@@ -45,6 +45,24 @@ void EnQueue(LinkQueue &Q, ElemType x) {
     Q.rear = s;
 }
 
+bool DeQueue(LinkQueue &Q, ElemType &x) {
+    if (QueueIsEmpty(Q))// 空队
+        return false;
+
+    // 取出带头结点队列的        头结点后的第一个元素的结点
+    LinkNode *p = Q.front->next;
+
+    x = p->data;
+
+    Q.front->next = p->next; // 修改头结点的next指针
+
+    if (Q.rear == p)
+        Q.rear = Q.front;
+
+    free(p);
+
+    return true;
+}
 
 void InitNoHeadQueue(LinkQueue &Q) {
     Q.front = nullptr;
@@ -84,6 +102,30 @@ void EnNoHeadQueue(LinkQueue &Q, ElemType x) {
         // 将新的结点作为rear
         Q.rear = s;
     }
+}
+
+
+bool DeNoHeadQueue(LinkQueue &Q, ElemType &x) {
+    //    if (Q.front == Q.rear)
+    //        return false;  // 空队列
+    if (NoHeadQueueIsEmpty(Q))
+        return false;
+
+    // rear 后面进入        front 前面出队
+
+    LinkNode *p = Q.front;  // p指向此次出队的结点
+    x = p->data;  // 取出数据
+    Q.front = p->next; // 修改front指针
+
+    // 如果是最后一个结点出队 则清空指针
+    if (Q.rear == p) {
+        Q.rear = nullptr;
+        Q.rear = nullptr;
+    }
+
+    free(p);
+
+    return true;
 }
 
 void TestLinkQueue() {

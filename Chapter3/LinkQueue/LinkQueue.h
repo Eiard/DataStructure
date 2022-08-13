@@ -55,6 +55,12 @@ bool QueueIsEmpty(LinkQueue Q);
  */
 void EnQueue(LinkQueue &Q,ElemType x);
 
+/**
+ * 带头结点的队列出队操作
+ * @param Q
+ * @param x
+ */
+bool DeQueue(LinkQueue &Q, ElemType &x);
 
 /**
  * 初始化无头结点链式队列
@@ -76,6 +82,15 @@ bool NoHeadQueueIsEmpty(LinkQueue Q);
  * @param x
  */
 void EnNoHeadQueue(LinkQueue &Q, ElemType x);
+
+/**
+ * 无头结点链式队列出队
+ *      对于出队最后一个元素,需要特殊处理rear 和 front指针
+ * @param Q
+ * @param x
+ * @return
+ */
+bool DeNoHeadQueue(LinkQueue &Q, ElemType &x);
 
 /**
  * 测试链式队列

@@ -6,32 +6,12 @@
 
 #IncludeRegexTransform: 
 
-D:/Computer/Code/C++/DataStructure/Chapter2/LNode/LNode.cpp
-LNode.h
-D:/Computer/Code/C++/DataStructure/Chapter2/LNode/LNode.h
+D:/Computer/Code/C++/DataStructure/Chapter3/LinkQueue/LinkQueue.cpp
+LinkQueue.h
+D:/Computer/Code/C++/DataStructure/Chapter3/LinkQueue/LinkQueue.h
 
-D:/Computer/Code/C++/DataStructure/Chapter2/LNode/LNode.h
+D:/Computer/Code/C++/DataStructure/Chapter3/LinkQueue/LinkQueue.h
 ../../Def.h
-D:/Computer/Code/C++/DataStructure/Def.h
-
-D:/Computer/Code/C++/DataStructure/Chapter2/SeqList/SeqList.cpp
-SeqList.h
-D:/Computer/Code/C++/DataStructure/Chapter2/SeqList/SeqList.h
-
-D:/Computer/Code/C++/DataStructure/Chapter2/SeqList/SeqList.h
-../../Def.h
-D:/Computer/Code/C++/DataStructure/Def.h
-
-D:/Computer/Code/C++/DataStructure/Chapter2/SqList/SqList.cpp
-SqList.h
-D:/Computer/Code/C++/DataStructure/Chapter2/SqList/SqList.h
-
-D:/Computer/Code/C++/DataStructure/Chapter2/SqList/SqList.h
-../../Def.h
-D:/Computer/Code/C++/DataStructure/Def.h
-
-D:/Computer/Code/C++/DataStructure/Def.cpp
-Def.h
 D:/Computer/Code/C++/DataStructure/Def.h
 
 D:/Computer/Code/C++/DataStructure/Def.h
@@ -43,14 +23,4 @@ cstring
 -
 cmath
 -
-
-D:/Computer/Code/C++/DataStructure/main.cpp
-Def.h
-D:/Computer/Code/C++/DataStructure/Def.h
-Chapter2/SqList/SqList.h
-D:/Computer/Code/C++/DataStructure/Chapter2/SqList/SqList.h
-Chapter2/SeqList/SeqList.h
-D:/Computer/Code/C++/DataStructure/Chapter2/SeqList/SeqList.h
-Chapter2/LNode/LNode.h
-D:/Computer/Code/C++/DataStructure/Chapter2/LNode/LNode.h
 
