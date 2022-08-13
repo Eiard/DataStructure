@@ -56,3 +56,32 @@ void TestSqStack() {
      */
 
 }
+
+bool bracketCheck(char str[], int length) {
+    SqStack S;
+    InitSqStack(S);
+
+    for (int i = 0; i < length; ++i) {
+        // 如果为左括号则压入栈中
+        if (str[i] == '(' || str[i] == '[' || str[i] == '{') {
+            Push(S, str[i]);
+        } else {
+
+            // 如果为空则说明扫描到右括号且栈为空 匹配失败
+            //            if (StackEmpty(S))
+            //                return false;
+
+            // 从栈顶取出一个括号进行匹配
+            ElemType topElem;
+            Pop(S, topElem);
+
+            // 如果 扫描到的是) 而栈顶不是 ( 的话则说明匹配失败 则直接结束
+            if (str[i] == ')' && topElem != '(')
+                return false;
+            if (str[i] == ']' && topElem != '[')
+                return false;
+            if (str[i] == '}' && topElem != '{')
+                return false;
+        }
+    }
+}

@@ -58,9 +58,12 @@ bool GetTop(SqStack S, ElemType &x);
  */
 void TestSqStack();
 
-
-
-
-
+/**
+ * 括号匹配
+ * @param str
+ * @param length
+ * @return
+ */
+bool bracketCheck(char str[], int length);
 
 #endif //DATASTRUCTURE_SQSTACK_H
