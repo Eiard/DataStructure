@@ -33,7 +33,7 @@ int main() {
     // TestLinkList();
 
     // 栈相关功能测试
-    // TestSqStack();
+     TestSqStack();
 
 
 

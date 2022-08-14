@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "D:/Computer/Code/C++/DataStructure/Chapter3/ShStack/ShStack.cpp" "D:/Computer/Code/C++/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/Chapter3/ShStack/ShStack.cpp.obj"
   "D:/Computer/Code/C++/DataStructure/Chapter3/SqQueue/SqQueue.cpp" "D:/Computer/Code/C++/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/Chapter3/SqQueue/SqQueue.cpp.obj"
   "D:/Computer/Code/C++/DataStructure/Chapter3/SqStack/SqStack.cpp" "D:/Computer/Code/C++/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/Chapter3/SqStack/SqStack.cpp.obj"
+  "D:/Computer/Code/C++/DataStructure/Chapter4/SString/SString.cpp" "D:/Computer/Code/C++/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/Chapter4/SString/SString.cpp.obj"
   "D:/Computer/Code/C++/DataStructure/Def.cpp" "D:/Computer/Code/C++/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/Def.cpp.obj"
   "D:/Computer/Code/C++/DataStructure/main.cpp" "D:/Computer/Code/C++/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/main.cpp.obj"
   )

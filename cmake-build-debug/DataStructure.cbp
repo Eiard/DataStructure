@@ -134,6 +134,12 @@
 		<Unit filename="D:/Computer/Code/C++/DataStructure/Chapter3/SqStack/SqStack.h">
 			<Option target="DataStructure"/>
 		</Unit>
+		<Unit filename="D:/Computer/Code/C++/DataStructure/Chapter4/SString/SString.cpp">
+			<Option target="DataStructure"/>
+		</Unit>
+		<Unit filename="D:/Computer/Code/C++/DataStructure/Chapter4/SString/SString.h">
+			<Option target="DataStructure"/>
+		</Unit>
 		<Unit filename="D:/Computer/Code/C++/DataStructure/Def.cpp">
 			<Option target="DataStructure"/>
 		</Unit>

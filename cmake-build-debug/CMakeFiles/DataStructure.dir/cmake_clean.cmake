@@ -8,6 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/DataStructure.dir/Chapter3/ShStack/ShStack.cpp.obj"
   "CMakeFiles/DataStructure.dir/Chapter3/SqQueue/SqQueue.cpp.obj"
   "CMakeFiles/DataStructure.dir/Chapter3/SqStack/SqStack.cpp.obj"
+  "CMakeFiles/DataStructure.dir/Chapter4/SString/SString.cpp.obj"
   "CMakeFiles/DataStructure.dir/Def.cpp.obj"
   "CMakeFiles/DataStructure.dir/main.cpp.obj"
   "DataStructure.exe"

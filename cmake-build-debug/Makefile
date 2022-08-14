@@ -385,6 +385,33 @@ Chapter3/SqStack/SqStack.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter3/SqStack/SqStack.cpp.s
 .PHONY : Chapter3/SqStack/SqStack.cpp.s
 
+Chapter4/SString/SString.obj: Chapter4/SString/SString.cpp.obj
+
+.PHONY : Chapter4/SString/SString.obj
+
+# target to build an object file
+Chapter4/SString/SString.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter4/SString/SString.cpp.obj
+.PHONY : Chapter4/SString/SString.cpp.obj
+
+Chapter4/SString/SString.i: Chapter4/SString/SString.cpp.i
+
+.PHONY : Chapter4/SString/SString.i
+
+# target to preprocess a source file
+Chapter4/SString/SString.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter4/SString/SString.cpp.i
+.PHONY : Chapter4/SString/SString.cpp.i
+
+Chapter4/SString/SString.s: Chapter4/SString/SString.cpp.s
+
+.PHONY : Chapter4/SString/SString.s
+
+# target to generate assembly for a file
+Chapter4/SString/SString.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter4/SString/SString.cpp.s
+.PHONY : Chapter4/SString/SString.cpp.s
+
 Def.obj: Def.cpp.obj
 
 .PHONY : Def.obj
@@ -475,6 +502,9 @@ help:
 	@echo ... Chapter3/SqStack/SqStack.obj
 	@echo ... Chapter3/SqStack/SqStack.i
 	@echo ... Chapter3/SqStack/SqStack.s
+	@echo ... Chapter4/SString/SString.obj
+	@echo ... Chapter4/SString/SString.i
+	@echo ... Chapter4/SString/SString.s
 	@echo ... Def.obj
 	@echo ... Def.i
 	@echo ... Def.s

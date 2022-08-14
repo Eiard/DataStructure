@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-D:/Computer/Code/C++/DataStructure/Chapter3/LinkQueue/LinkQueue.cpp
-LinkQueue.h
-D:/Computer/Code/C++/DataStructure/Chapter3/LinkQueue/LinkQueue.h
+D:/Computer/Code/C++/DataStructure/Chapter3/SqStack/SqStack.cpp
+SqStack.h
+D:/Computer/Code/C++/DataStructure/Chapter3/SqStack/SqStack.h
 
-D:/Computer/Code/C++/DataStructure/Chapter3/LinkQueue/LinkQueue.h
+D:/Computer/Code/C++/DataStructure/Chapter3/SqStack/SqStack.h
 ../../Def.h
 D:/Computer/Code/C++/DataStructure/Def.h
 

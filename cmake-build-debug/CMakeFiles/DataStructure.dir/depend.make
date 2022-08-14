@@ -40,9 +40,15 @@ CMakeFiles/DataStructure.dir/Chapter3/SqStack/SqStack.cpp.obj: ../Def.h
 CMakeFiles/DataStructure.dir/Def.cpp.obj: ../Def.cpp
 CMakeFiles/DataStructure.dir/Def.cpp.obj: ../Def.h
 
+CMakeFiles/DataStructure.dir/main.cpp.obj: ../Chapter2/DNode/DNode.h
 CMakeFiles/DataStructure.dir/main.cpp.obj: ../Chapter2/LNode/LNode.h
+CMakeFiles/DataStructure.dir/main.cpp.obj: ../Chapter2/STNode/STNode.h
 CMakeFiles/DataStructure.dir/main.cpp.obj: ../Chapter2/SeqList/SeqList.h
 CMakeFiles/DataStructure.dir/main.cpp.obj: ../Chapter2/SqList/SqList.h
+CMakeFiles/DataStructure.dir/main.cpp.obj: ../Chapter3/LinkQueue/LinkQueue.h
+CMakeFiles/DataStructure.dir/main.cpp.obj: ../Chapter3/ShStack/ShStack.h
+CMakeFiles/DataStructure.dir/main.cpp.obj: ../Chapter3/SqQueue/SqQueue.h
+CMakeFiles/DataStructure.dir/main.cpp.obj: ../Chapter3/SqStack/SqStack.h
 CMakeFiles/DataStructure.dir/main.cpp.obj: ../Def.h
 CMakeFiles/DataStructure.dir/main.cpp.obj: ../main.cpp
 

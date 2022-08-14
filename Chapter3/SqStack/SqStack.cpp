@@ -90,3 +90,13 @@ bool bracketCheck(char str[], int length) {
     }
     return true;
 }
+
+
+int computeSuffix(char *str, int length) {
+    return 0;
+}
+
+
+bool turnSuffixToInfix(char *suffix, int sLength, char infix, int iLength) {
+    return false;
+}
