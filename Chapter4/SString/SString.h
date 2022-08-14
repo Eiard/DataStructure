@@ -89,4 +89,16 @@ bool Concat(SString &sString, char *s1, int s1Length, char *s2, int s2Length);
 int IndexOf(SString &sString, char *temp, int length);
 
 
+/**
+ * 比较两个串
+ *      如果S>T   则返回值>0
+ *      如果S=T   则返回值=0
+ *      如果S<T   则返回值<0
+ * @param sString
+ * @param temp
+ * @param length
+ * @return
+ */
+bool StrCompare(SString &sString, char *temp, int length);
+
 #endif //DATASTRUCTURE_SSTRING_H
