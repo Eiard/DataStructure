@@ -55,6 +55,10 @@ void TestSqStack() {
      * 其他操作
      */
 
+    char a[] = "{{}}";
+
+    printf("%d", bracketCheck(a, sizeof(a)));
+
 }
 
 bool bracketCheck(char str[], int length) {
@@ -84,4 +88,5 @@ bool bracketCheck(char str[], int length) {
                 return false;
         }
     }
+    return true;
 }

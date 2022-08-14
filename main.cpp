@@ -13,6 +13,13 @@
 #include "Chapter2/SqList/SqList.h"
 #include "Chapter2/SeqList/SeqList.h"
 #include "Chapter2/LNode/LNode.h"
+#include "Chapter2/DNode/DNode.h"
+#include "Chapter2/STNode/STNode.h"
+
+#include "Chapter3/LinkQueue/LinkQueue.h"
+#include "Chapter3/ShStack/ShStack.h"
+#include "Chapter3/SqQueue/SqQueue.h"
+#include "Chapter3/SqStack/SqStack.h"
 
 
 int main() {
@@ -23,7 +30,11 @@ int main() {
     // TestSqeList();
 
     // 单链表的测试
-    TestLinkList();
+    // TestLinkList();
+
+    // 栈相关功能测试
+    // TestSqStack();
+
 
 
     return 0;
