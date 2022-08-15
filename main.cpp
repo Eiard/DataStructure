@@ -21,6 +21,7 @@
 #include "Chapter3/SqQueue/SqQueue.h"
 #include "Chapter3/SqStack/SqStack.h"
 
+#include "Chapter4/SString/SString.h"
 
 int main() {
     // 静态线性表测试
@@ -33,9 +34,9 @@ int main() {
     // TestLinkList();
 
     // 栈相关功能测试
-     TestSqStack();
+    // TestSqStack();
 
-
+    TestSString();
 
     return 0;
 }
