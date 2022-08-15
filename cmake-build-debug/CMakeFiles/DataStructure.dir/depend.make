@@ -37,6 +37,10 @@ CMakeFiles/DataStructure.dir/Chapter3/SqStack/SqStack.cpp.obj: ../Chapter3/SqSta
 CMakeFiles/DataStructure.dir/Chapter3/SqStack/SqStack.cpp.obj: ../Chapter3/SqStack/SqStack.h
 CMakeFiles/DataStructure.dir/Chapter3/SqStack/SqStack.cpp.obj: ../Def.h
 
+CMakeFiles/DataStructure.dir/Chapter4/SString/SString.cpp.obj: ../Chapter4/SString/SString.cpp
+CMakeFiles/DataStructure.dir/Chapter4/SString/SString.cpp.obj: ../Chapter4/SString/SString.h
+CMakeFiles/DataStructure.dir/Chapter4/SString/SString.cpp.obj: ../Def.h
+
 CMakeFiles/DataStructure.dir/Def.cpp.obj: ../Def.cpp
 CMakeFiles/DataStructure.dir/Def.cpp.obj: ../Def.h
 
@@ -49,6 +53,7 @@ CMakeFiles/DataStructure.dir/main.cpp.obj: ../Chapter3/LinkQueue/LinkQueue.h
 CMakeFiles/DataStructure.dir/main.cpp.obj: ../Chapter3/ShStack/ShStack.h
 CMakeFiles/DataStructure.dir/main.cpp.obj: ../Chapter3/SqQueue/SqQueue.h
 CMakeFiles/DataStructure.dir/main.cpp.obj: ../Chapter3/SqStack/SqStack.h
+CMakeFiles/DataStructure.dir/main.cpp.obj: ../Chapter4/SString/SString.h
 CMakeFiles/DataStructure.dir/main.cpp.obj: ../Def.h
 CMakeFiles/DataStructure.dir/main.cpp.obj: ../main.cpp
 
