@@ -48,6 +48,13 @@ int Index_KMP(SString S, SString T);
 void get_next(SString T, int next[]);
 
 /**
+ * 改进KMP算法的next数据
+ * @param T
+ * @param nextVal
+ */
+void get_nextVal(SString T, int nextVal[]);
+
+/**
  * 朴素模式匹配算法
  *      最原始的匹配方法
  *      定位子串T在S中第一次出现的位置

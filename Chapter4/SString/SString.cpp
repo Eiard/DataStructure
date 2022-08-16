@@ -55,17 +55,95 @@ int Index_KMP(SString S, SString T) {
 
 void get_next(SString T, int next[]) {
 
+    // i是遍历指针
     int i = 1;
+
+    // j是前缀指针
     int j = 0;
     next[1] = 0;
 
     while (i < T.length) {
         if (j == 0 || T.ch[i] == T.ch[j]) {
+
+            /**
+             * abaac
+             *
+             * 第一次执行的时候
+             *
+             * i = 1 j = 0
+             *
+             * 两者满足条件   后移
+             *
+             * i = 2 j = 1
+             * ☆并且此时给next[2] = 1
+             *
+             * 此时开始下一步
+             * abaac    判断i = 2 的字符b 与 j = 1的字符a相比是否相等
+             *
+             * 不相等  则j = next[j] 即 j = next[1] = 0
+             *
+             * 此时进入if条件(满足j = 0)
+             * i = 2 j = 0
+             *两者均++
+             * i = 3 j = 1
+             * ☆next[3] = 1
+             *
+             * abaac 再判断 i =3 的字符a 与 j = 1的字符a相比 相等
+             *
+             * 两者均++
+             * i = 4 j = 2
+             * ☆并且next[4] = 2
+             *
+             * abaac 再判断 i = 4的字符a 与 j = 2的字符b相比 不相等
+             * j = 1 = next[2]
+             *
+             * abaac 再判断 i = 4的字符a 与 j = 1的字符a相比 相等
+             * 两者均++
+             * i = 5 j = 2
+             * ☆next[5] = 2
+             *
+             * 结束
+             *
+             * 最终得到next数组为
+             *
+             * 位序 1 2 3 4 5
+             *     0 1 1 2 2
+             *
+             */
+
             ++i;
             ++j;
+
+            // 赋值next数组
+            // j是最大相等前后缀长度
             next[i] = j;
+
         } else {
             j = next[j];
+        }
+    }
+}
+
+void get_nextVal(SString T, int nextVal[]) {
+    int i = 1;
+
+
+    int j = 0;
+    nextVal[1] = 0;
+
+    while (i < T.length) {
+        if (j == 0 || T.ch[i] == T.ch[j]) {
+            ++i;
+            ++j;
+
+            // 与get_next的唯一区别
+            if (T.ch[i] != T.ch[j])
+                nextVal[i] = j;
+            else
+                nextVal[i] = nextVal[j];
+
+        } else {
+            j = nextVal[j];
         }
     }
 }
