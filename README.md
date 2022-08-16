@@ -11,8 +11,12 @@ https://github.com/Eiard/Algorithms_2023
 ~~SqList~~  
 ~~SeqList~~  
 ~~LNode~~  
-DLNode
-
-
-### Chapter3 
-
+~~DLNode~~  
+~~STNode~~
+### Chapter3 栈和队列
+~~LinkQueue~~  
+~~ShStack~~  
+~~SqQueue~~  
+~~SqStack~~
+### Chapter4 串 朴素匹配算法和KMP算法 get_next函数 get_nextVal函数实现  
+~~SString~~
