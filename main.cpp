@@ -23,6 +23,8 @@
 
 #include "Chapter4/SString/SString.h"
 
+#include "Chapter5/BiTNode/BiTNode.h"
+
 int main() {
     // 静态线性表测试
     // TestSqList();
@@ -36,7 +38,10 @@ int main() {
     // 栈相关功能测试
     // TestSqStack();
 
-    TestSString();
+    // 串 字符串匹配算法的测试
+    // TestSString();
+
+    // 树相关功能测试
 
     return 0;
 }

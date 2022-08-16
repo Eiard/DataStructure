@@ -412,6 +412,33 @@ Chapter4/SString/SString.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter4/SString/SString.cpp.s
 .PHONY : Chapter4/SString/SString.cpp.s
 
+Chapter5/BiTNode/BiTNode.obj: Chapter5/BiTNode/BiTNode.cpp.obj
+
+.PHONY : Chapter5/BiTNode/BiTNode.obj
+
+# target to build an object file
+Chapter5/BiTNode/BiTNode.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter5/BiTNode/BiTNode.cpp.obj
+.PHONY : Chapter5/BiTNode/BiTNode.cpp.obj
+
+Chapter5/BiTNode/BiTNode.i: Chapter5/BiTNode/BiTNode.cpp.i
+
+.PHONY : Chapter5/BiTNode/BiTNode.i
+
+# target to preprocess a source file
+Chapter5/BiTNode/BiTNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter5/BiTNode/BiTNode.cpp.i
+.PHONY : Chapter5/BiTNode/BiTNode.cpp.i
+
+Chapter5/BiTNode/BiTNode.s: Chapter5/BiTNode/BiTNode.cpp.s
+
+.PHONY : Chapter5/BiTNode/BiTNode.s
+
+# target to generate assembly for a file
+Chapter5/BiTNode/BiTNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter5/BiTNode/BiTNode.cpp.s
+.PHONY : Chapter5/BiTNode/BiTNode.cpp.s
+
 Def.obj: Def.cpp.obj
 
 .PHONY : Def.obj
@@ -505,6 +532,9 @@ help:
 	@echo ... Chapter4/SString/SString.obj
 	@echo ... Chapter4/SString/SString.i
 	@echo ... Chapter4/SString/SString.s
+	@echo ... Chapter5/BiTNode/BiTNode.obj
+	@echo ... Chapter5/BiTNode/BiTNode.i
+	@echo ... Chapter5/BiTNode/BiTNode.s
 	@echo ... Def.obj
 	@echo ... Def.i
 	@echo ... Def.s
