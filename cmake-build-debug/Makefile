@@ -439,6 +439,33 @@ Chapter5/BiTNode/BiTNode.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter5/BiTNode/BiTNode.cpp.s
 .PHONY : Chapter5/BiTNode/BiTNode.cpp.s
 
+Chapter5/TreeNode/TreeNode.obj: Chapter5/TreeNode/TreeNode.cpp.obj
+
+.PHONY : Chapter5/TreeNode/TreeNode.obj
+
+# target to build an object file
+Chapter5/TreeNode/TreeNode.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter5/TreeNode/TreeNode.cpp.obj
+.PHONY : Chapter5/TreeNode/TreeNode.cpp.obj
+
+Chapter5/TreeNode/TreeNode.i: Chapter5/TreeNode/TreeNode.cpp.i
+
+.PHONY : Chapter5/TreeNode/TreeNode.i
+
+# target to preprocess a source file
+Chapter5/TreeNode/TreeNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter5/TreeNode/TreeNode.cpp.i
+.PHONY : Chapter5/TreeNode/TreeNode.cpp.i
+
+Chapter5/TreeNode/TreeNode.s: Chapter5/TreeNode/TreeNode.cpp.s
+
+.PHONY : Chapter5/TreeNode/TreeNode.s
+
+# target to generate assembly for a file
+Chapter5/TreeNode/TreeNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter5/TreeNode/TreeNode.cpp.s
+.PHONY : Chapter5/TreeNode/TreeNode.cpp.s
+
 Def.obj: Def.cpp.obj
 
 .PHONY : Def.obj
@@ -535,6 +562,9 @@ help:
 	@echo ... Chapter5/BiTNode/BiTNode.obj
 	@echo ... Chapter5/BiTNode/BiTNode.i
 	@echo ... Chapter5/BiTNode/BiTNode.s
+	@echo ... Chapter5/TreeNode/TreeNode.obj
+	@echo ... Chapter5/TreeNode/TreeNode.i
+	@echo ... Chapter5/TreeNode/TreeNode.s
 	@echo ... Def.obj
 	@echo ... Def.i
 	@echo ... Def.s
