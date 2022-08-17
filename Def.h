@@ -22,6 +22,8 @@
  */
 typedef int ElemType;
 
+#define uint8 int
+
 // 增加一个 并取模
 #define ASC_MODULO_OPERATION(x, y) (x+1)%y
 
