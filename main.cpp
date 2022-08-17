@@ -23,6 +23,7 @@
 
 #include "Chapter4/SString/SString.h"
 
+#include "Chapter5/TreeNode/TreeNode.h"
 #include "Chapter5/BiTNode/BiTNode.h"
 
 int main() {
@@ -42,6 +43,7 @@ int main() {
     // TestSString();
 
     // 树相关功能测试
+    TestBiTNode();
 
     return 0;
 }

@@ -14,9 +14,10 @@
 
 #include "../../Def.h"
 
+typedef char TreeElemType;
 
 typedef struct BiTNode {
-    ElemType data; // 数据域
+    TreeElemType data; // 数据域
     struct BiTNode *lChild, *rChild; // 左 右 孩子指针
 } BiTNode, *BiTree;
 
@@ -26,7 +27,7 @@ typedef struct BiTNode {
  * @param tree
  * @return
  */
-bool InitTreeRoot(BiTree tree);
+bool InitTreeRoot(BiTree *tree, TreeElemType data);
 
 /**
  * 创建一个新的结点
@@ -34,16 +35,16 @@ bool InitTreeRoot(BiTree tree);
  * @param data
  * @return
  */
-BiTree createBiTNode(ElemType data);
+BiTree createBiTNode(TreeElemType data);
 
 /**
- * 给父亲节点添加 左右孩子
+ * 给结点添加左右孩子
  * @param father
  * @param data
  * @param flag
  * @return
  */
-bool addSonBiTNode(BiTree father, ElemType data, uint8 flag);
+bool addSonBiTNode(BiTNode *father, TreeElemType data, uint8 flag);
 
 /**
  * 获取左右孩子
@@ -51,7 +52,47 @@ bool addSonBiTNode(BiTree father, ElemType data, uint8 flag);
  * @param flag
  * @return
  */
-BiTNode *getSonBiTNode(BiTree father, uint8 flag);
+BiTNode *getSonBiTNode(BiTNode *father, uint8 flag);
+
+
+/**
+ * 查询结点的父亲节点
+ *      从树根开始,挨个查询 哪个结点的->lchild 或者 ->rchild 的结点是son
+ * @param tree
+ * @param son
+ * @return
+ */
+BiTNode *getFather(BiTree tree, BiTNode *son);
+
+/**
+ * 先序遍历
+ *      先根遍历
+ *          根 左 右
+ * @param T
+ */
+void PreOrder(BiTree T);
+
+/**
+ * 中序遍历
+ *      中根遍历
+ *          左 根 右
+ * @param T
+ */
+void InOrder(BiTree T);
+
+/**
+ * 后序遍历
+ *      后根遍历
+ *          左 右 根
+ * @param T
+ */
+void PostOrder(BiTree T);
+
+/**
+ * 访问结点数据
+ * @param biTNode
+ */
+void Visit(BiTNode *biTNode);
 
 /**
  * 功能测试函数

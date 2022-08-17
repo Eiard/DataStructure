@@ -20,15 +20,14 @@ enum {
     Right,
 };
 
-bool InitTreeRoot(BiTree tree) {
-    tree = (BiTree) malloc(sizeof(BiTree));
-    tree->data = 1;
-    tree->lChild = nullptr;
-    tree->rChild = nullptr;
+bool InitTreeRoot(BiTree &tree, TreeElemType data) {
+
+    tree = createBiTNode(data);
+
     return true;
 }
 
-BiTree createBiTNode(ElemType data) {
+BiTree createBiTNode(TreeElemType data) {
     // 动态申请一个结点
     BiTNode *p = (BiTNode *) malloc(sizeof(BiTNode));
     if (p == nullptr)
@@ -44,7 +43,7 @@ BiTree createBiTNode(ElemType data) {
     return p;
 }
 
-bool addSonBiTNode(BiTree father, ElemType data, uint8 flag) {
+bool addSonBiTNode(BiTNode *father, TreeElemType data, uint8 flag) {
     if (father == nullptr) {
         return false;
     }
@@ -65,11 +64,11 @@ bool addSonBiTNode(BiTree father, ElemType data, uint8 flag) {
     return true;
 }
 
-BiTNode *getSonBiTNode(BiTree father, int flag) {
+BiTNode *getSonBiTNode(BiTNode *father, int flag) {
     if (father == nullptr) {
         return nullptr;
     }
-    
+
     if (flag == Left) {
         return father->lChild;
     } else if (flag == Right) {
@@ -79,13 +78,68 @@ BiTNode *getSonBiTNode(BiTree father, int flag) {
     }
 }
 
+BiTNode *getFather(BiTree tree, BiTNode *son) {
+
+
+    return nullptr;
+}
+
+void PreOrder(BiTree T) {
+    if (T != nullptr) {
+        // 1. 先访问根节点
+        Visit(T);
+
+        // 2. 递归遍历左子树
+        PreOrder(T->lChild);
+
+        // 3. 递归遍历右子树
+        PreOrder(T->rChild);
+    }
+}
+
+void InOrder(BiTree T) {
+    if (T != nullptr) {
+        // 1. 先递归遍历左子树
+        InOrder(T->lChild);
+
+        // 2. 访问根节点
+        Visit(T);
+
+        // 3. 递归遍历右子树
+        InOrder(T->rChild);
+    }
+}
+
+void PostOrder(BiTree T) {
+    if (T != nullptr) {
+        // 1. 先递归遍历左子树
+        PostOrder(T->lChild);
+
+        // 2. 递归遍历右子树
+        PostOrder(T->rChild);
+
+        // 3. 访问根节点
+        Visit(T);
+    }
+}
+
+void Visit(BiTNode *biTNode) {
+    printf("%c ", biTNode->data);
+}
+
+
 void TestBiTNode() {
 
     //  定义一棵空树
     BiTree root = nullptr;
 
     // 初始化树根结点
-    InitTreeRoot(root);
+    InitTreeRoot(root, 'a');
+
+    addSonBiTNode(root, 'b', Left);
+    addSonBiTNode(root, 'c', Right);
+
+    PreOrder(root);
 
 
 }

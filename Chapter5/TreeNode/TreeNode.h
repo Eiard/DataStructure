@@ -15,14 +15,14 @@
 
 #include "../../Def.h"
 
-#define MaxSize 100
+#define MaxSizeTree 100
 
 struct TreeNode{
     ElemType value; // 结点中的数据元素
     bool isEmpty;  // 判断结点是否为空
 };
 
-TreeNode tree[MaxSize];
+
 
 /**
  * 齿梳化顺序存储结构的二叉树

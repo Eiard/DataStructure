@@ -13,7 +13,7 @@
 
 
 void InitTree(TreeNode tree[]) {
-    for (int i = 0; i < MaxSize; ++i) {
+    for (int i = 0; i < MaxSizeTree; ++i) {
         tree[i].isEmpty = true;
     }
 }
@@ -25,7 +25,7 @@ void InitTree(TreeNode tree[]) {
 
 
 void TestTree() {
-
+    TreeNode tree[MaxSizeTree];
 
 
 }
