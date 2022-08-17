@@ -37,13 +37,21 @@ bool InitTreeRoot(BiTree tree);
 BiTree createBiTNode(ElemType data);
 
 /**
- * 给结点左孩子添加元素
+ * 给父亲节点添加 左右孩子
  * @param father
  * @param data
  * @param flag
  * @return
  */
-bool addSonBiTNode(BiTree father, ElemType data,uint8 flag);
+bool addSonBiTNode(BiTree father, ElemType data, uint8 flag);
+
+/**
+ * 获取左右孩子
+ * @param father
+ * @param flag
+ * @return
+ */
+BiTNode *getSonBiTNode(BiTree father, uint8 flag);
 
 /**
  * 功能测试函数

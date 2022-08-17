@@ -45,6 +45,10 @@ BiTree createBiTNode(ElemType data) {
 }
 
 bool addSonBiTNode(BiTree father, ElemType data, uint8 flag) {
+    if (father == nullptr) {
+        return false;
+    }
+
     BiTNode *p = createBiTNode(data);
     if (p == nullptr) {
         return false;
@@ -61,6 +65,19 @@ bool addSonBiTNode(BiTree father, ElemType data, uint8 flag) {
     return true;
 }
 
+BiTNode *getSonBiTNode(BiTree father, int flag) {
+    if (father == nullptr) {
+        return nullptr;
+    }
+    
+    if (flag == Left) {
+        return father->lChild;
+    } else if (flag == Right) {
+        return father->rChild;
+    } else {
+        return nullptr;
+    }
+}
 
 void TestBiTNode() {
 
