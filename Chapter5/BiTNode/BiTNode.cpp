@@ -12,7 +12,6 @@
 #include "BiTNode.h"
 #include "../../Chapter3/LinkQueue/LinkQueue.h"
 
-
 /**
  * 用来判断是添加左孩子 还是 右孩子
  */
@@ -145,9 +144,27 @@ int TreeDepth(BiTree T) {
 }
 
 void LevelOrder(BiTree T) {
-    LinkQueue Q;
+    LinkQueue Q;  // 利用链式队列 (不知道树的大小)
     InitQueue(Q);
-    
+    BiTree p;       // 遍历指针
+    // 初始将根节点入队
+    EnQueue(Q, T);
+
+    // 队列不为空
+    while (!QueueIsEmpty(Q)) {
+        // 出队一个结点
+        DeQueue(Q, p);
+        // 访问它
+        Visit(p);
+
+        // 将其左右孩子入队
+        if (p->lChild != nullptr) {
+            EnQueue(Q, p->lChild);
+        }
+        if (p->rChild != nullptr) {
+            EnQueue(Q, p->rChild);
+        }
+    }
 }
 
 void TestBiTNode() {
@@ -160,6 +177,7 @@ void TestBiTNode() {
 
     addSonBiTNode(root, 'b', Left);
     addSonBiTNode(root->lChild, 'c', Left);
+    addSonBiTNode(root->lChild, 'f', Right);
     addSonBiTNode(root->lChild->lChild, 'd', Left);
     addSonBiTNode(root->lChild->lChild, 'e', Right);
 
@@ -172,6 +190,12 @@ void TestBiTNode() {
     printf("\n");
 
     PostOrder(root);
+
+    printf("\n");
+
+    LevelOrder(root);
+
+    printf("\n");
 
     printf("Hight %d", TreeDepth(root));
 }

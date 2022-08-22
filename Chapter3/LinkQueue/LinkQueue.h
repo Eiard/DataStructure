@@ -20,7 +20,7 @@
  * 链式队列结点
  */
 
-typedef BiTNode* QueueElemType;
+typedef BiTNode *QueueElemType;
 
 typedef struct LinkNode {
     QueueElemType data;
