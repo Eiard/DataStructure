@@ -29,9 +29,18 @@ typedef struct ThreadNode {
 
 
 /**
+ * 中序线索化二叉树T
+ * @param T
+ * @param pre
+ */
+void CreateInThread(ThreadTree &T, ThreadTree &pre);
+
+/**
  * 中序遍历对二叉树线索化
- *
- *
+ *      代码结构类似
+ *          先遍历左子树
+ *          对该节点操作
+ *          再遍历右子树
  * @param Tree
  * @param pre
  */

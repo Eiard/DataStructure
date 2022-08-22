@@ -13,6 +13,22 @@
 
 
 /**
+ * 中序线索化二叉树T
+ * @param T
+ * @param pre
+ */
+void CreateInThread(ThreadTree &T, ThreadTree &pre) {
+    pre = nullptr;
+    if (T != nullptr) {
+        InThread(T, pre);
+        if (pre->rChild == nullptr) {
+            pre->rTag = 1;
+        }
+    }
+
+}
+
+/**
  * 类似于中序遍历
  * @param T
  * @param pre
