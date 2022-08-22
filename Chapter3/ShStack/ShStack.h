@@ -17,7 +17,7 @@
 #define MaxSize 10
 
 typedef struct {
-    ElemType dat[MaxSize];
+    QueueElemType dat[MaxSize];
     int top0;  //2号栈栈顶指针
     int top1;  //1号栈栈顶指针
 } ShStack;

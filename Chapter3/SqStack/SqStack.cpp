@@ -16,7 +16,7 @@ void InitSqStack(SqStack &S) {
     S.top = -1;
 }
 
-bool Push(SqStack &S, ElemType x) {
+bool Push(SqStack &S, QueueElemType x) {
     if (S.top == MaxSize - 1) {
         return false;
     }
@@ -26,7 +26,7 @@ bool Push(SqStack &S, ElemType x) {
     return true;
 }
 
-bool Pop(SqStack &S, ElemType &x) {
+bool Pop(SqStack &S, QueueElemType &x) {
     if (S.top == -1) {
         return false;
     }
@@ -36,7 +36,7 @@ bool Pop(SqStack &S, ElemType &x) {
     return true;
 }
 
-bool GetTop(SqStack S, ElemType &x) {
+bool GetTop(SqStack S, QueueElemType &x) {
     if (S.top == -1) {
         return false;
     }
@@ -76,7 +76,7 @@ bool bracketCheck(char str[], int length) {
             //                return false;
 
             // 从栈顶取出一个括号进行匹配
-            ElemType topElem;
+            QueueElemType topElem;
             Pop(S, topElem);
 
             // 如果 扫描到的是) 而栈顶不是 ( 的话则说明匹配失败 则直接结束

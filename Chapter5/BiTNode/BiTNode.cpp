@@ -10,6 +10,7 @@
 
 
 #include "BiTNode.h"
+#include "../../Chapter3/LinkQueue/LinkQueue.h"
 
 
 /**
@@ -141,6 +142,12 @@ int TreeDepth(BiTree T) {
         // 谁大就选谁,然后返回时+1
         return l > r ? l + 1 : r + 1;
     }
+}
+
+void LevelOrder(BiTree T) {
+    LinkQueue Q;
+    InitQueue(Q);
+    
 }
 
 void TestBiTNode() {

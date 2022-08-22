@@ -15,7 +15,7 @@
 #include "../../Def.h"
 
 typedef struct LNode {
-    ElemType data;
+    QueueElemType data;
     struct LNode *next;
 } LNode, *LinkList;
 
@@ -69,7 +69,7 @@ LinkList TailInsertBuildHeadLinkList(LinkList &L);
  * @param e
  * @return
  */
-bool HeadLinkListInsert(LinkList &L, int i, ElemType e);
+bool HeadLinkListInsert(LinkList &L, int i, QueueElemType e);
 
 /**
  * 无头结点链表
@@ -84,7 +84,7 @@ bool HeadLinkListInsert(LinkList &L, int i, ElemType e);
  * @param e
  * @return
  */
-bool NoHeadLinkListInsert(LinkList &L, int i, ElemType e);
+bool NoHeadLinkListInsert(LinkList &L, int i, QueueElemType e);
 
 /**
  * 在指定结点进行后插操作
@@ -92,7 +92,7 @@ bool NoHeadLinkListInsert(LinkList &L, int i, ElemType e);
  * @param p
  * @return
  */
-bool InsertNextLNode(LNode *p, ElemType e);
+bool InsertNextLNode(LNode *p, QueueElemType e);
 
 /**
  * 在指定结点进行前插操作,不是物理前插(逻辑前插)
@@ -114,7 +114,7 @@ bool InsertPriorLNode(LNode *p, LNode *s);
  * @param e
  * @return
  */
-bool HeadLinkListIDelete(LinkList &L, int i, ElemType e);
+bool HeadLinkListIDelete(LinkList &L, int i, QueueElemType e);
 
 /**
  * 直接删除指定结点
@@ -146,7 +146,7 @@ LNode *GetElemHeadLinkList(LinkList L, int i);
  * @param e
  * @return
  */
-LNode *LocateElemHeadLinkList(LinkList L, ElemType e);
+LNode *LocateElemHeadLinkList(LinkList L, QueueElemType e);
 
 /**
  * 遍历带头结点单链表

@@ -20,7 +20,7 @@
 /**
  * 抽象数据类型
  */
-typedef int ElemType;
+typedef int QueueElemType;
 
 #define uint8 int
 
@@ -32,6 +32,6 @@ typedef int ElemType;
  * @param e1
  * @param e2
  */
-void Swap(ElemType &e1, ElemType &e2);
+void Swap(QueueElemType &e1, QueueElemType &e2);
 
 #endif //DATASTRUCTURE_DEF_H

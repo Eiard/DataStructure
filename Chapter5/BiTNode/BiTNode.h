@@ -129,6 +129,22 @@ void Visit(BiTNode *biTNode);
 int TreeDepth(BiTree T);
 
 /**
+ * 层序遍历
+ *      算法思想:
+ *      1.初始化一个辅助队列
+ *      2.根节点入队
+ *      3.若队列非空,则队头结点出队,访问该节点,并将其左 右孩子插入队尾(如果有的话)
+ *      4.重复3直至队列为空
+ *
+ *      总而言之就是:
+ *          先根节点入队
+ *          队非空则出队(每次出队一个)
+ *          出队结点的左右孩子入队
+ * @param T
+ */
+void LevelOrder(BiTree T);
+
+/**
  * 功能测试函数
  */
 void TestBiTNode();

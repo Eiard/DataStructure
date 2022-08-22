@@ -17,7 +17,7 @@
 #define StaticMaxSize 10
 
 typedef struct {
-    ElemType data; // 数据
+    QueueElemType data; // 数据
     int next;  // 下标
 } SLinkList[StaticMaxSize];
 
@@ -27,7 +27,7 @@ typedef struct {
  *      #define StaticMaxSize 10
  *
  *      struct Node{
- *      ElemType data; // 数据
+ *      QueueElemType data; // 数据
  *      int next;  // 下标
  *      };
  *      typedef struct Node SLinkList[StaticMaxSize];  顺便用SLinkList定义一个长度为MaxSize的Node型数组

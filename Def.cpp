@@ -11,8 +11,8 @@
 
 #include "Def.h"
 
-void Swap(ElemType &e1, ElemType &e2) {
-    ElemType temp;
+void Swap(QueueElemType &e1, QueueElemType &e2) {
+    QueueElemType temp;
     temp = e1;
     e1 = e2;
     e2 = temp;

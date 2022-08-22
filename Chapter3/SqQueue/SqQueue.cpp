@@ -31,7 +31,7 @@ bool SqQueueIsFull(SqQueue Q) {
 }
 
 
-bool EnSqQueue(SqQueue &Q, ElemType x) {
+bool EnSqQueue(SqQueue &Q, QueueElemType x) {
     if (SqQueueIsFull(Q))
         return false; // 队满 报错
 
@@ -49,7 +49,7 @@ bool EnSqQueue(SqQueue &Q, ElemType x) {
 }
 
 
-bool DeSqQueue(SqQueue &Q, ElemType &x) {
+bool DeSqQueue(SqQueue &Q, QueueElemType &x) {
     if (SqQueueIsEmpty(Q))
         return false;
 
@@ -65,7 +65,7 @@ bool DeSqQueue(SqQueue &Q, ElemType &x) {
     return false;
 }
 
-bool GetHead(SqQueue Q, ElemType &x) {
+bool GetHead(SqQueue Q, QueueElemType &x) {
     if (SqQueueIsEmpty(Q))
         return false;
 

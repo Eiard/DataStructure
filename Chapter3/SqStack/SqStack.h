@@ -18,7 +18,7 @@
 #define MaxSize 10  // 定义栈中元素的最大个数
 
 typedef struct {
-    ElemType data[MaxSize];  // 静态数组存放元素
+    QueueElemType data[MaxSize];  // 静态数组存放元素
     int top;  // 栈顶指针
 } SqStack;
 
@@ -34,7 +34,7 @@ void InitSqStack(SqStack &S);
  * @param x
  * @return
  */
-bool Push(SqStack &S, ElemType x);
+bool Push(SqStack &S, QueueElemType x);
 
 /**
  * 从栈中Pop出一个元素
@@ -42,7 +42,7 @@ bool Push(SqStack &S, ElemType x);
  * @param x
  * @return
  */
-bool Pop(SqStack &S, ElemType &x);
+bool Pop(SqStack &S, QueueElemType &x);
 
 /**
  * 读取栈顶元素
@@ -50,7 +50,7 @@ bool Pop(SqStack &S, ElemType &x);
  * @param x
  * @return
  */
-bool GetTop(SqStack S, ElemType &x);
+bool GetTop(SqStack S, QueueElemType &x);
 
 
 /**

@@ -15,7 +15,7 @@ void InitSqList(SqList &L) {
     L.length = 0;
 }
 
-bool InsertSqList(SqList &L, int i, ElemType e) {
+bool InsertSqList(SqList &L, int i, QueueElemType e) {
     // 判断i的范围是否有效
     if (i < 1 || i > L.length + 1) {
         return false;
@@ -40,7 +40,7 @@ bool InsertSqList(SqList &L, int i, ElemType e) {
     L.length++;
 }
 
-bool DeleteSqList(SqList &L, int i, ElemType &e) {
+bool DeleteSqList(SqList &L, int i, QueueElemType &e) {
     // 判断i的范围是否有效
     if (i < 1 || i > L.length + 1) {
         return false;
@@ -62,7 +62,7 @@ bool DeleteSqList(SqList &L, int i, ElemType &e) {
     return true;
 }
 
-ElemType GetElemSqList(SqList L, int i) {
+QueueElemType GetElemSqList(SqList L, int i) {
     // 判断i的范围是否有效
     if (i < 1 || i > L.length + 1) {
         return NULL;
@@ -72,7 +72,7 @@ ElemType GetElemSqList(SqList L, int i) {
     return L.data[i - 1];
 }
 
-ElemType LocateElemSqList(SqList L, ElemType e) {
+QueueElemType LocateElemSqList(SqList L, QueueElemType e) {
     for (int i = 0; i < L.length; ++i) {
         if (L.data[i] == e) {
             return i + 1;

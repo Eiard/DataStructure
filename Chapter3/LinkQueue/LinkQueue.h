@@ -18,8 +18,11 @@
  * 链表的单个结点结构体
  * 链式队列结点
  */
+
+typedef int QueueElemType;
+
 typedef struct LinkNode {
-    ElemType data;
+    QueueElemType data;
     struct LinkNode *next;
 } LinkNode;
 
@@ -53,14 +56,14 @@ bool QueueIsEmpty(LinkQueue Q);
  * @param Q
  * @param x
  */
-void EnQueue(LinkQueue &Q,ElemType x);
+void EnQueue(LinkQueue &Q, QueueElemType x);
 
 /**
  * 带头结点的队列出队操作
  * @param Q
  * @param x
  */
-bool DeQueue(LinkQueue &Q, ElemType &x);
+bool DeQueue(LinkQueue &Q, QueueElemType &x);
 
 /**
  * 初始化无头结点链式队列
@@ -81,7 +84,7 @@ bool NoHeadQueueIsEmpty(LinkQueue Q);
  * @param Q
  * @param x
  */
-void EnNoHeadQueue(LinkQueue &Q, ElemType x);
+void EnNoHeadQueue(LinkQueue &Q, QueueElemType x);
 
 /**
  * 无头结点链式队列出队
@@ -90,7 +93,7 @@ void EnNoHeadQueue(LinkQueue &Q, ElemType x);
  * @param x
  * @return
  */
-bool DeNoHeadQueue(LinkQueue &Q, ElemType &x);
+bool DeNoHeadQueue(LinkQueue &Q, QueueElemType &x);
 
 /**
  * 测试链式队列

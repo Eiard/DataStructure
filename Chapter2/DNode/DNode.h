@@ -15,7 +15,7 @@
 #include"../../Def.h"
 
 typedef struct DNode {
-    ElemType data;
+    QueueElemType data;
     struct DNode *prior, *next;
 } DNode, *DLinkList;
 
