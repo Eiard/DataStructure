@@ -128,6 +128,21 @@ void Visit(BiTNode *biTNode) {
 }
 
 
+int TreeDepth(BiTree T) {
+    if (T == nullptr) {
+        // 空结点高度为0
+        return 0;
+    } else {
+        // 左孩子从叶子节点返回回来的高度
+        int l = TreeDepth(T->lChild);
+        // 右孩子从叶子节点返回回来的高度
+        int r = TreeDepth(T->rChild);
+
+        // 谁大就选谁,然后返回时+1
+        return l > r ? l + 1 : r + 1;
+    }
+}
+
 void TestBiTNode() {
 
     //  定义一棵空树
@@ -137,9 +152,19 @@ void TestBiTNode() {
     InitTreeRoot(root, 'a');
 
     addSonBiTNode(root, 'b', Left);
-    addSonBiTNode(root, 'c', Right);
+    addSonBiTNode(root->lChild, 'c', Left);
+    addSonBiTNode(root->lChild->lChild, 'd', Left);
+    addSonBiTNode(root->lChild->lChild, 'e', Right);
 
     PreOrder(root);
 
+    printf("\n");
 
+    InOrder(root);
+
+    printf("\n");
+
+    PostOrder(root);
+
+    printf("Hight %d", TreeDepth(root));
 }
