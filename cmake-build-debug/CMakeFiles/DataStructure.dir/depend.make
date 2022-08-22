@@ -23,6 +23,7 @@ CMakeFiles/DataStructure.dir/Chapter2/SqList/SqList.cpp.obj: ../Def.h
 
 CMakeFiles/DataStructure.dir/Chapter3/LinkQueue/LinkQueue.cpp.obj: ../Chapter3/LinkQueue/LinkQueue.cpp
 CMakeFiles/DataStructure.dir/Chapter3/LinkQueue/LinkQueue.cpp.obj: ../Chapter3/LinkQueue/LinkQueue.h
+CMakeFiles/DataStructure.dir/Chapter3/LinkQueue/LinkQueue.cpp.obj: ../Chapter5/BiTNode/BiTNode.h
 CMakeFiles/DataStructure.dir/Chapter3/LinkQueue/LinkQueue.cpp.obj: ../Def.h
 
 CMakeFiles/DataStructure.dir/Chapter3/ShStack/ShStack.cpp.obj: ../Chapter3/ShStack/ShStack.cpp
@@ -41,6 +42,7 @@ CMakeFiles/DataStructure.dir/Chapter4/SString/SString.cpp.obj: ../Chapter4/SStri
 CMakeFiles/DataStructure.dir/Chapter4/SString/SString.cpp.obj: ../Chapter4/SString/SString.h
 CMakeFiles/DataStructure.dir/Chapter4/SString/SString.cpp.obj: ../Def.h
 
+CMakeFiles/DataStructure.dir/Chapter5/BiTNode/BiTNode.cpp.obj: ../Chapter3/LinkQueue/LinkQueue.h
 CMakeFiles/DataStructure.dir/Chapter5/BiTNode/BiTNode.cpp.obj: ../Chapter5/BiTNode/BiTNode.cpp
 CMakeFiles/DataStructure.dir/Chapter5/BiTNode/BiTNode.cpp.obj: ../Chapter5/BiTNode/BiTNode.h
 CMakeFiles/DataStructure.dir/Chapter5/BiTNode/BiTNode.cpp.obj: ../Def.h

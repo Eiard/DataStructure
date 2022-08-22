@@ -6,9 +6,17 @@
 
 #IncludeRegexTransform: 
 
+D:/Computer/Code/C++/DataStructure/Chapter3/LinkQueue/LinkQueue.h
+../../Def.h
+D:/Computer/Code/C++/DataStructure/Def.h
+../../Chapter5/BiTNode/BiTNode.h
+D:/Computer/Code/C++/DataStructure/Chapter5/BiTNode/BiTNode.h
+
 D:/Computer/Code/C++/DataStructure/Chapter5/BiTNode/BiTNode.cpp
 BiTNode.h
 D:/Computer/Code/C++/DataStructure/Chapter5/BiTNode/BiTNode.h
+../../Chapter3/LinkQueue/LinkQueue.h
+D:/Computer/Code/C++/DataStructure/Chapter3/LinkQueue/LinkQueue.h
 
 D:/Computer/Code/C++/DataStructure/Chapter5/BiTNode/BiTNode.h
 ../../Def.h
