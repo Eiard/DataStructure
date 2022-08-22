@@ -31,10 +31,11 @@ typedef struct ThreadNode {
 /**
  * 中序遍历对二叉树线索化
  *
- * @param tree
- * @return
+ *
+ * @param Tree
+ * @param pre
  */
-void InThread(ThreadNode &tree);
+void InThread(ThreadTree &Tree, ThreadTree &pre);
 
 
 #endif //DATASTRUCTURE_THREADNODE_H
