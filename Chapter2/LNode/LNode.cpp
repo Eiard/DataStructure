@@ -35,7 +35,7 @@ bool InitNoHeadLinkList(LinkList &L) {
 
 LinkList HeadInsertBuildHeadLinkList(LinkList &L) {
     LNode *s;
-    QueueElemType x;
+    ElemType x;
 
     // 给链表头结点动态分配内存空间(创建头结点)
     L = (LinkList) malloc(sizeof(LNode));
@@ -64,7 +64,7 @@ LinkList HeadInsertBuildHeadLinkList(LinkList &L) {
 }
 
 LinkList TailInsertBuildHeadLinkList(LinkList &L) {
-    QueueElemType x;
+    ElemType x;
 
     // 动态分配头结点地址
     L = (LinkList) malloc(sizeof(LNode));
@@ -100,7 +100,7 @@ LinkList TailInsertBuildHeadLinkList(LinkList &L) {
 }
 
 
-bool HeadLinkListInsert(LinkList &L, int i, QueueElemType e) {
+bool HeadLinkListInsert(LinkList &L, int i, ElemType e) {
     if (i < 1) {
         return false;
     }
@@ -143,7 +143,7 @@ bool HeadLinkListInsert(LinkList &L, int i, QueueElemType e) {
     //    return true;
 }
 
-bool NoHeadLinkListInsert(LinkList &L, int i, QueueElemType e) {
+bool NoHeadLinkListInsert(LinkList &L, int i, ElemType e) {
     if (i < 1) {
         return false;
     }
@@ -197,7 +197,7 @@ bool NoHeadLinkListInsert(LinkList &L, int i, QueueElemType e) {
     //return true;
 }
 
-bool InsertNextLNode(LNode *p, QueueElemType e) {
+bool InsertNextLNode(LNode *p, ElemType e) {
     if (p == nullptr) {
         return false;
     }
@@ -251,7 +251,7 @@ bool InsertPriorLNode(LNode *p, LNode *s) {
     return true;
 }
 
-bool HeadLinkListIDelete(LinkList &L, int i, QueueElemType e) {
+bool HeadLinkListIDelete(LinkList &L, int i, ElemType e) {
     if (i < 1) {
         return false;
     }
@@ -343,7 +343,7 @@ LNode *GetElemHeadLinkList(LinkList L, int i) {
 
 }
 
-LNode *LocateElemHeadLinkList(LinkList L, QueueElemType e) {
+LNode *LocateElemHeadLinkList(LinkList L, ElemType e) {
     LNode *p = L->next;
 
     // 找到值为e的结点停止

@@ -20,7 +20,7 @@
 #define SeqListInitSize 10      // 顺序表的初始长度
 
 typedef struct {
-    QueueElemType *data;             // 指示动态分配数组的指针
+    ElemType *data;             // 指示动态分配数组的指针
     int MaxSize;                // 顺序表的最大容量
     int length;                 // 顺序表的当前长度
 } SeqList;                      // 顺序表的类型定义(动态分配方式)

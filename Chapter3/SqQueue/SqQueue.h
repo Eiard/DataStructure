@@ -17,7 +17,7 @@
 #define MaxSize 10 // 定义队列中元素的最大个数
 
 typedef struct {
-    QueueElemType data[MaxSize];
+    ElemType data[MaxSize];
 
     /**
      *  注意判断rear的指向
@@ -91,7 +91,7 @@ bool SqQueueIsFull(SqQueue Q);
  * @param x
  * @return
  */
-bool EnSqQueue(SqQueue &Q, QueueElemType x);
+bool EnSqQueue(SqQueue &Q, ElemType x);
 
 /**
  * 出队操作
@@ -100,7 +100,7 @@ bool EnSqQueue(SqQueue &Q, QueueElemType x);
  * @param x
  * @return
  */
-bool DeSqQueue(SqQueue &Q, QueueElemType &x);
+bool DeSqQueue(SqQueue &Q, ElemType &x);
 
 /**
  * 队列只能查询队头元素的值
@@ -108,7 +108,7 @@ bool DeSqQueue(SqQueue &Q, QueueElemType &x);
  * @param x
  * @return
  */
-bool GetHead(SqQueue Q, QueueElemType &x);
+bool GetHead(SqQueue Q, ElemType &x);
 
 /**
  * 计算队列的长度

@@ -27,7 +27,7 @@ bool QueueIsEmpty(LinkQueue Q) {
         return false;
 }
 
-void EnQueue(LinkQueue &Q, QueueElemType x) {
+void EnQueue(LinkQueue &Q, ElemType x) {
 
     // 申请一个新的节点
     LinkNode *s = (LinkNode *) malloc(sizeof(LinkNode));
@@ -45,7 +45,7 @@ void EnQueue(LinkQueue &Q, QueueElemType x) {
     Q.rear = s;
 }
 
-bool DeQueue(LinkQueue &Q, QueueElemType &x) {
+bool DeQueue(LinkQueue &Q, ElemType &x) {
     if (QueueIsEmpty(Q))// 空队
         return false;
 
@@ -77,7 +77,7 @@ bool NoHeadQueueIsEmpty(LinkQueue Q) {
         return false;
 }
 
-void EnNoHeadQueue(LinkQueue &Q, QueueElemType x) {
+void EnNoHeadQueue(LinkQueue &Q, ElemType x) {
 
     // 申请一个新的节点
     LinkNode *s = (LinkNode *) malloc(sizeof(LinkNode));
@@ -105,7 +105,7 @@ void EnNoHeadQueue(LinkQueue &Q, QueueElemType x) {
 }
 
 
-bool DeNoHeadQueue(LinkQueue &Q, QueueElemType &x) {
+bool DeNoHeadQueue(LinkQueue &Q, ElemType &x) {
     //    if (Q.front == Q.rear)
     //        return false;  // 空队列
     if (NoHeadQueueIsEmpty(Q))

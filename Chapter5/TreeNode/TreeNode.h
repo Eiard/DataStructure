@@ -18,7 +18,7 @@
 #define MaxSizeTree 100
 
 struct TreeNode{
-    QueueElemType value; // 结点中的数据元素
+    ElemType value; // 结点中的数据元素
     bool isEmpty;  // 判断结点是否为空
 };
 

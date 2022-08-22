@@ -20,7 +20,7 @@
 #define SqListMaxSize 10    // 定义最大长度
 
 typedef struct {
-    QueueElemType data[SqListMaxSize];   // 用静态的"数组"存放数据元素
+    ElemType data[SqListMaxSize];   // 用静态的"数组"存放数据元素
     int length;                     // 顺序表的当前长度
 } SqList;                           // 顺序表的类型定义(静态分配方式)
 
@@ -44,7 +44,7 @@ void InitSqList(SqList &L);
  * @param i
  * @param e
  */
-bool InsertSqList(SqList &L, int i, QueueElemType e);
+bool InsertSqList(SqList &L, int i, ElemType e);
 
 /**
  * 删除表L中第i个位置的元素,i下标后的元素全部前移
@@ -61,7 +61,7 @@ bool InsertSqList(SqList &L, int i, QueueElemType e);
  * @param  e
  * @return e(通过引用返回删除的值)
  */
-bool DeleteSqList(SqList &L, int i, QueueElemType &e);
+bool DeleteSqList(SqList &L, int i, ElemType &e);
 
 /**
  * 通过下标直接获取元素
@@ -70,7 +70,7 @@ bool DeleteSqList(SqList &L, int i, QueueElemType &e);
  * @param i
  * @return
  */
-QueueElemType GetElemSqList(SqList L, int i);
+ElemType GetElemSqList(SqList L, int i);
 
 
 /**
@@ -86,7 +86,7 @@ QueueElemType GetElemSqList(SqList L, int i);
  * @param e
  * @return
  */
-QueueElemType LocateElemSqList(SqList L, QueueElemType e);
+ElemType LocateElemSqList(SqList L, ElemType e);
 
 
 /**
