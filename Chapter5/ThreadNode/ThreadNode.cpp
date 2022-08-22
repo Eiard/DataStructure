@@ -35,12 +35,13 @@ void InThread(ThreadTree &T, ThreadTree &pre) {
         }
 
         // 右孩子指针域为空 建立后驱线索
-        if (T->rChild == nullptr) {
+        if (pre != nullptr && pre->rChild == nullptr) {
             // 指向中序遍历的后一个结点
-            T->rChild = pre;
+            T->rChild = T;
             // 更新线索标志
             T->rTag = 1;
         }
+        // 标记当前结点成为刚刚访问过的结点
         pre = T;
         //----------------------------
 
