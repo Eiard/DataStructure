@@ -18,14 +18,15 @@
  * @param pre
  */
 void CreateInThread(ThreadTree &T, ThreadTree &pre) {
-    pre = nullptr;
-    if (T != nullptr) {
-        InThread(T, pre);
+    pre = nullptr;  // pre 初始为null
+    if (T != nullptr) { // 非空二叉树才能线索化
+        InThread(T, pre);  // 中序线索化二叉树
+
+        // 递归操作完后 pre必然指向最后一个结点
         if (pre->rChild == nullptr) {
-            pre->rTag = 1;
+            pre->rTag = 1;  // 对最后一个结点进行特殊处理
         }
     }
-
 }
 
 /**
