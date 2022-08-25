@@ -4,6 +4,11 @@
     @FileName:      ThreadNode
     @author:        30671
     @description:   DONE : 线索二叉树
+                  中序        先序      后序
+    找前驱          ✔          x        ✔
+    找后继          ✔          ✔        x
+    打 x 的 必须借助三叉链表才能实现
+
     @date:          2022/8/22
     @version:       1.0
 */
@@ -292,7 +297,7 @@ ThreadNode *PostPreNode(ThreadNode *p) {
 ThreadNode *PostNextNode(ThreadNode *p) {
     if (p->rTag == 1) // 已经线索化的情况,直接通过线索跳转
         return p->rChild;
-    else{
+    else {
         // 则必有右孩子
 
         // 后序遍历 左 右 根
