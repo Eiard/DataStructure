@@ -46,5 +46,49 @@ void CreateInThread(ThreadTree &T, ThreadTree &pre);
  */
 void InThread(ThreadTree &Tree, ThreadTree &pre);
 
+/**
+ * 先序线索化二叉树T
+ * @param T
+ * @param pre
+ */
+void CreatePreThread(ThreadTree &Tree, ThreadTree &pre);
+
+/**
+ * 先序遍历对二叉树线索化
+ *      代码结构类似
+ *          对该节点操作
+ *          先遍历左子树
+ *          再遍历右子树
+ * @param Tree
+ * @param pre
+ */
+void PreThread(ThreadTree &Tree, ThreadTree &pre);
+
+
+/**
+ * 后序线索化二叉树T
+ * @param T
+ * @param pre
+ */
+void CreatePostThread(ThreadTree &Tree, ThreadTree &pre);
+
+/**
+ * 后序遍历对二叉树线索化
+ *      代码结构类似
+ *          对该节点操作
+ *          先遍历左子树
+ *          再遍历右子树
+ * @param Tree
+ * @param pre
+ */
+void PostThread(ThreadTree &Tree, ThreadTree &pre);
+
+
+/**
+ * 左右空指针线索化函数
+ * @param T
+ * @param pre
+ */
+void Visit(ThreadTree &T, ThreadTree &pre);
 
 #endif //DATASTRUCTURE_THREADNODE_H
