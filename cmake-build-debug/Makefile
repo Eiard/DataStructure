@@ -439,6 +439,60 @@ Chapter5/BiTNode/BiTNode.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter5/BiTNode/BiTNode.cpp.s
 .PHONY : Chapter5/BiTNode/BiTNode.cpp.s
 
+Chapter5/CTNode/CTNode.obj: Chapter5/CTNode/CTNode.cpp.obj
+
+.PHONY : Chapter5/CTNode/CTNode.obj
+
+# target to build an object file
+Chapter5/CTNode/CTNode.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter5/CTNode/CTNode.cpp.obj
+.PHONY : Chapter5/CTNode/CTNode.cpp.obj
+
+Chapter5/CTNode/CTNode.i: Chapter5/CTNode/CTNode.cpp.i
+
+.PHONY : Chapter5/CTNode/CTNode.i
+
+# target to preprocess a source file
+Chapter5/CTNode/CTNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter5/CTNode/CTNode.cpp.i
+.PHONY : Chapter5/CTNode/CTNode.cpp.i
+
+Chapter5/CTNode/CTNode.s: Chapter5/CTNode/CTNode.cpp.s
+
+.PHONY : Chapter5/CTNode/CTNode.s
+
+# target to generate assembly for a file
+Chapter5/CTNode/CTNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter5/CTNode/CTNode.cpp.s
+.PHONY : Chapter5/CTNode/CTNode.cpp.s
+
+Chapter5/PTNode/PTNode.obj: Chapter5/PTNode/PTNode.cpp.obj
+
+.PHONY : Chapter5/PTNode/PTNode.obj
+
+# target to build an object file
+Chapter5/PTNode/PTNode.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter5/PTNode/PTNode.cpp.obj
+.PHONY : Chapter5/PTNode/PTNode.cpp.obj
+
+Chapter5/PTNode/PTNode.i: Chapter5/PTNode/PTNode.cpp.i
+
+.PHONY : Chapter5/PTNode/PTNode.i
+
+# target to preprocess a source file
+Chapter5/PTNode/PTNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter5/PTNode/PTNode.cpp.i
+.PHONY : Chapter5/PTNode/PTNode.cpp.i
+
+Chapter5/PTNode/PTNode.s: Chapter5/PTNode/PTNode.cpp.s
+
+.PHONY : Chapter5/PTNode/PTNode.s
+
+# target to generate assembly for a file
+Chapter5/PTNode/PTNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter5/PTNode/PTNode.cpp.s
+.PHONY : Chapter5/PTNode/PTNode.cpp.s
+
 Chapter5/ThreadNode/ThreadNode.obj: Chapter5/ThreadNode/ThreadNode.cpp.obj
 
 .PHONY : Chapter5/ThreadNode/ThreadNode.obj
@@ -589,6 +643,12 @@ help:
 	@echo ... Chapter5/BiTNode/BiTNode.obj
 	@echo ... Chapter5/BiTNode/BiTNode.i
 	@echo ... Chapter5/BiTNode/BiTNode.s
+	@echo ... Chapter5/CTNode/CTNode.obj
+	@echo ... Chapter5/CTNode/CTNode.i
+	@echo ... Chapter5/CTNode/CTNode.s
+	@echo ... Chapter5/PTNode/PTNode.obj
+	@echo ... Chapter5/PTNode/PTNode.i
+	@echo ... Chapter5/PTNode/PTNode.s
 	@echo ... Chapter5/ThreadNode/ThreadNode.obj
 	@echo ... Chapter5/ThreadNode/ThreadNode.i
 	@echo ... Chapter5/ThreadNode/ThreadNode.s

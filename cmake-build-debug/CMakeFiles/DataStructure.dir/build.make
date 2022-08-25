@@ -271,6 +271,32 @@ CMakeFiles/DataStructure.dir/Chapter5/ThreadNode/ThreadNode.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DataStructure.dir/Chapter5/ThreadNode/ThreadNode.cpp.s"
 	D:\Computer\Environment\cpp\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Computer\Code\C++\DataStructure\Chapter5\ThreadNode\ThreadNode.cpp -o CMakeFiles\DataStructure.dir\Chapter5\ThreadNode\ThreadNode.cpp.s
 
+CMakeFiles/DataStructure.dir/Chapter5/PTNode/PTNode.cpp.obj: CMakeFiles/DataStructure.dir/flags.make
+CMakeFiles/DataStructure.dir/Chapter5/PTNode/PTNode.cpp.obj: ../Chapter5/PTNode/PTNode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Computer\Code\C++\DataStructure\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/DataStructure.dir/Chapter5/PTNode/PTNode.cpp.obj"
+	D:\Computer\Environment\cpp\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\DataStructure.dir\Chapter5\PTNode\PTNode.cpp.obj -c D:\Computer\Code\C++\DataStructure\Chapter5\PTNode\PTNode.cpp
+
+CMakeFiles/DataStructure.dir/Chapter5/PTNode/PTNode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DataStructure.dir/Chapter5/PTNode/PTNode.cpp.i"
+	D:\Computer\Environment\cpp\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Computer\Code\C++\DataStructure\Chapter5\PTNode\PTNode.cpp > CMakeFiles\DataStructure.dir\Chapter5\PTNode\PTNode.cpp.i
+
+CMakeFiles/DataStructure.dir/Chapter5/PTNode/PTNode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DataStructure.dir/Chapter5/PTNode/PTNode.cpp.s"
+	D:\Computer\Environment\cpp\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Computer\Code\C++\DataStructure\Chapter5\PTNode\PTNode.cpp -o CMakeFiles\DataStructure.dir\Chapter5\PTNode\PTNode.cpp.s
+
+CMakeFiles/DataStructure.dir/Chapter5/CTNode/CTNode.cpp.obj: CMakeFiles/DataStructure.dir/flags.make
+CMakeFiles/DataStructure.dir/Chapter5/CTNode/CTNode.cpp.obj: ../Chapter5/CTNode/CTNode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Computer\Code\C++\DataStructure\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/DataStructure.dir/Chapter5/CTNode/CTNode.cpp.obj"
+	D:\Computer\Environment\cpp\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\DataStructure.dir\Chapter5\CTNode\CTNode.cpp.obj -c D:\Computer\Code\C++\DataStructure\Chapter5\CTNode\CTNode.cpp
+
+CMakeFiles/DataStructure.dir/Chapter5/CTNode/CTNode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DataStructure.dir/Chapter5/CTNode/CTNode.cpp.i"
+	D:\Computer\Environment\cpp\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Computer\Code\C++\DataStructure\Chapter5\CTNode\CTNode.cpp > CMakeFiles\DataStructure.dir\Chapter5\CTNode\CTNode.cpp.i
+
+CMakeFiles/DataStructure.dir/Chapter5/CTNode/CTNode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DataStructure.dir/Chapter5/CTNode/CTNode.cpp.s"
+	D:\Computer\Environment\cpp\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Computer\Code\C++\DataStructure\Chapter5\CTNode\CTNode.cpp -o CMakeFiles\DataStructure.dir\Chapter5\CTNode\CTNode.cpp.s
+
 # Object files for target DataStructure
 DataStructure_OBJECTS = \
 "CMakeFiles/DataStructure.dir/main.cpp.obj" \
@@ -287,7 +313,9 @@ DataStructure_OBJECTS = \
 "CMakeFiles/DataStructure.dir/Chapter4/SString/SString.cpp.obj" \
 "CMakeFiles/DataStructure.dir/Chapter5/BiTNode/BiTNode.cpp.obj" \
 "CMakeFiles/DataStructure.dir/Chapter5/TreeNode/TreeNode.cpp.obj" \
-"CMakeFiles/DataStructure.dir/Chapter5/ThreadNode/ThreadNode.cpp.obj"
+"CMakeFiles/DataStructure.dir/Chapter5/ThreadNode/ThreadNode.cpp.obj" \
+"CMakeFiles/DataStructure.dir/Chapter5/PTNode/PTNode.cpp.obj" \
+"CMakeFiles/DataStructure.dir/Chapter5/CTNode/CTNode.cpp.obj"
 
 # External object files for target DataStructure
 DataStructure_EXTERNAL_OBJECTS =
@@ -307,11 +335,13 @@ DataStructure.exe: CMakeFiles/DataStructure.dir/Chapter4/SString/SString.cpp.obj
 DataStructure.exe: CMakeFiles/DataStructure.dir/Chapter5/BiTNode/BiTNode.cpp.obj
 DataStructure.exe: CMakeFiles/DataStructure.dir/Chapter5/TreeNode/TreeNode.cpp.obj
 DataStructure.exe: CMakeFiles/DataStructure.dir/Chapter5/ThreadNode/ThreadNode.cpp.obj
+DataStructure.exe: CMakeFiles/DataStructure.dir/Chapter5/PTNode/PTNode.cpp.obj
+DataStructure.exe: CMakeFiles/DataStructure.dir/Chapter5/CTNode/CTNode.cpp.obj
 DataStructure.exe: CMakeFiles/DataStructure.dir/build.make
 DataStructure.exe: CMakeFiles/DataStructure.dir/linklibs.rsp
 DataStructure.exe: CMakeFiles/DataStructure.dir/objects1.rsp
 DataStructure.exe: CMakeFiles/DataStructure.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Computer\Code\C++\DataStructure\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable DataStructure.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Computer\Code\C++\DataStructure\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable DataStructure.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\DataStructure.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

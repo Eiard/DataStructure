@@ -10,6 +10,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/DataStructure.dir/Chapter3/SqStack/SqStack.cpp.obj"
   "CMakeFiles/DataStructure.dir/Chapter4/SString/SString.cpp.obj"
   "CMakeFiles/DataStructure.dir/Chapter5/BiTNode/BiTNode.cpp.obj"
+  "CMakeFiles/DataStructure.dir/Chapter5/CTNode/CTNode.cpp.obj"
+  "CMakeFiles/DataStructure.dir/Chapter5/PTNode/PTNode.cpp.obj"
   "CMakeFiles/DataStructure.dir/Chapter5/ThreadNode/ThreadNode.cpp.obj"
   "CMakeFiles/DataStructure.dir/Chapter5/TreeNode/TreeNode.cpp.obj"
   "CMakeFiles/DataStructure.dir/Def.cpp.obj"

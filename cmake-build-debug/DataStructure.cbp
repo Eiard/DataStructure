@@ -146,6 +146,18 @@
 		<Unit filename="D:/Computer/Code/C++/DataStructure/Chapter5/BiTNode/BiTNode.h">
 			<Option target="DataStructure"/>
 		</Unit>
+		<Unit filename="D:/Computer/Code/C++/DataStructure/Chapter5/CTNode/CTNode.cpp">
+			<Option target="DataStructure"/>
+		</Unit>
+		<Unit filename="D:/Computer/Code/C++/DataStructure/Chapter5/CTNode/CTNode.h">
+			<Option target="DataStructure"/>
+		</Unit>
+		<Unit filename="D:/Computer/Code/C++/DataStructure/Chapter5/PTNode/PTNode.cpp">
+			<Option target="DataStructure"/>
+		</Unit>
+		<Unit filename="D:/Computer/Code/C++/DataStructure/Chapter5/PTNode/PTNode.h">
+			<Option target="DataStructure"/>
+		</Unit>
 		<Unit filename="D:/Computer/Code/C++/DataStructure/Chapter5/ThreadNode/ThreadNode.cpp">
 			<Option target="DataStructure"/>
 		</Unit>
