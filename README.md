@@ -20,3 +20,8 @@ https://github.com/Eiard/Algorithms_2023
 ~~SqStack~~
 ### Chapter4 串 朴素匹配算法和KMP算法 get_next函数 get_nextVal函数实现  
 ~~SString~~
+### Chapter5 二叉树  
+~~BiTNode~~  
+~~ThreadNode~~  
+~~TreeNode~~  
+### Chapter6 图  
