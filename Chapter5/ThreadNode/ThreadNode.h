@@ -91,4 +91,91 @@ void PostThread(ThreadTree &Tree, ThreadTree &pre);
  */
 void Visit(ThreadTree &T, ThreadTree &pre);
 
+
+/**
+ * 中序
+ *
+ * 找到以p为根的字树中,第一个被中序遍历的结点
+ *
+ * 最左边的第一个结点
+ *
+ * @param p
+ * @return
+ */
+ThreadNode *InFirstNode(ThreadNode *p);
+
+/**
+ * 中序
+ *
+ * 找后继结点
+ * @param p
+ * @return
+ */
+ThreadNode *InNextNode(ThreadNode *p);
+
+
+/**
+ * 最后一个被中序遍历的结点
+ *
+ * 最右边的结点
+ *
+ * @param p
+ * @return
+ */
+ThreadNode *InLastNode(ThreadNode *p);
+
+/**
+ * 中序
+ *
+ * 找前驱结点
+ * @param p
+ * @return
+ */
+ThreadNode *InPreNode(ThreadNode *p);
+
+/**
+ * 对中序线索二叉树进行中序遍历(利用线索实现的非递归算法)
+ * @param Tree
+ */
+void InOrder(ThreadTree Tree);
+
+
+/**
+ * 先序
+ *
+ * 找前驱根p结点的父结点必然是他的父亲
+ * @param p
+ * @return
+ */
+ThreadNode* PrePreNode(ThreadNode *p);
+
+
+/**
+ * 先序
+ *
+ * 找后继结点
+ * p的后继必然是p->Left
+ * @param p
+ * @return
+ */
+ThreadNode* PreNextNode(ThreadNode *p);
+
+/**
+ * 后序
+ *
+ * 找前驱
+ * @param p
+ * @return
+ */
+ThreadNode* PostPreNode(ThreadNode *p);
+
+/**
+ * 后序
+ *
+ * 找后继结点
+ * @param p
+ * @return
+ */
+ThreadNode* PostNextNode(ThreadNode *p);
+
 #endif //DATASTRUCTURE_THREADNODE_H
