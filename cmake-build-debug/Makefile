@@ -493,6 +493,33 @@ Chapter5/CTNode/CTNode.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter5/CTNode/CTNode.cpp.s
 .PHONY : Chapter5/CTNode/CTNode.cpp.s
 
+Chapter5/HTNode/HTNode.obj: Chapter5/HTNode/HTNode.cpp.obj
+
+.PHONY : Chapter5/HTNode/HTNode.obj
+
+# target to build an object file
+Chapter5/HTNode/HTNode.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter5/HTNode/HTNode.cpp.obj
+.PHONY : Chapter5/HTNode/HTNode.cpp.obj
+
+Chapter5/HTNode/HTNode.i: Chapter5/HTNode/HTNode.cpp.i
+
+.PHONY : Chapter5/HTNode/HTNode.i
+
+# target to preprocess a source file
+Chapter5/HTNode/HTNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter5/HTNode/HTNode.cpp.i
+.PHONY : Chapter5/HTNode/HTNode.cpp.i
+
+Chapter5/HTNode/HTNode.s: Chapter5/HTNode/HTNode.cpp.s
+
+.PHONY : Chapter5/HTNode/HTNode.s
+
+# target to generate assembly for a file
+Chapter5/HTNode/HTNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter5/HTNode/HTNode.cpp.s
+.PHONY : Chapter5/HTNode/HTNode.cpp.s
+
 Chapter5/PTNode/PTNode.obj: Chapter5/PTNode/PTNode.cpp.obj
 
 .PHONY : Chapter5/PTNode/PTNode.obj
@@ -676,6 +703,9 @@ help:
 	@echo ... Chapter5/CTNode/CTNode.obj
 	@echo ... Chapter5/CTNode/CTNode.i
 	@echo ... Chapter5/CTNode/CTNode.s
+	@echo ... Chapter5/HTNode/HTNode.obj
+	@echo ... Chapter5/HTNode/HTNode.i
+	@echo ... Chapter5/HTNode/HTNode.s
 	@echo ... Chapter5/PTNode/PTNode.obj
 	@echo ... Chapter5/PTNode/PTNode.i
 	@echo ... Chapter5/PTNode/PTNode.s

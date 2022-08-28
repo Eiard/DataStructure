@@ -17,6 +17,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "D:/Computer/Code/C++/DataStructure/Chapter5/BiTNode/BiTNode.cpp" "D:/Computer/Code/C++/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/Chapter5/BiTNode/BiTNode.cpp.obj"
   "D:/Computer/Code/C++/DataStructure/Chapter5/CSNode/CSNode.cpp" "D:/Computer/Code/C++/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/Chapter5/CSNode/CSNode.cpp.obj"
   "D:/Computer/Code/C++/DataStructure/Chapter5/CTNode/CTNode.cpp" "D:/Computer/Code/C++/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/Chapter5/CTNode/CTNode.cpp.obj"
+  "D:/Computer/Code/C++/DataStructure/Chapter5/HTNode/HTNode.cpp" "D:/Computer/Code/C++/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/Chapter5/HTNode/HTNode.cpp.obj"
   "D:/Computer/Code/C++/DataStructure/Chapter5/PTNode/PTNode.cpp" "D:/Computer/Code/C++/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/Chapter5/PTNode/PTNode.cpp.obj"
   "D:/Computer/Code/C++/DataStructure/Chapter5/ThreadNode/ThreadNode.cpp" "D:/Computer/Code/C++/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/Chapter5/ThreadNode/ThreadNode.cpp.obj"
   "D:/Computer/Code/C++/DataStructure/Chapter5/TreeNode/TreeNode.cpp" "D:/Computer/Code/C++/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/Chapter5/TreeNode/TreeNode.cpp.obj"

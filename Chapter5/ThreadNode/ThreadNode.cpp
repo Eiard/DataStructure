@@ -256,7 +256,13 @@ void InOrder(ThreadTree Tree) {
     }
 }
 
-
+/**
+ * 后序线索二叉树遍历
+ *
+ * 需要三叉链表
+ * @param p
+ * @return
+ */
 ThreadNode *PrePreNode(ThreadNode *p) {
     // 需要三叉链表 访问父亲结点
     return nullptr;

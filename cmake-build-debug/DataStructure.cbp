@@ -158,6 +158,12 @@
 		<Unit filename="D:/Computer/Code/C++/DataStructure/Chapter5/CTNode/CTNode.h">
 			<Option target="DataStructure"/>
 		</Unit>
+		<Unit filename="D:/Computer/Code/C++/DataStructure/Chapter5/HTNode/HTNode.cpp">
+			<Option target="DataStructure"/>
+		</Unit>
+		<Unit filename="D:/Computer/Code/C++/DataStructure/Chapter5/HTNode/HTNode.h">
+			<Option target="DataStructure"/>
+		</Unit>
 		<Unit filename="D:/Computer/Code/C++/DataStructure/Chapter5/PTNode/PTNode.cpp">
 			<Option target="DataStructure"/>
 		</Unit>
