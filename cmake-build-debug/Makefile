@@ -601,6 +601,33 @@ Chapter5/TreeNode/TreeNode.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter5/TreeNode/TreeNode.cpp.s
 .PHONY : Chapter5/TreeNode/TreeNode.cpp.s
 
+Chapter5/UFSets/UFSets.obj: Chapter5/UFSets/UFSets.cpp.obj
+
+.PHONY : Chapter5/UFSets/UFSets.obj
+
+# target to build an object file
+Chapter5/UFSets/UFSets.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter5/UFSets/UFSets.cpp.obj
+.PHONY : Chapter5/UFSets/UFSets.cpp.obj
+
+Chapter5/UFSets/UFSets.i: Chapter5/UFSets/UFSets.cpp.i
+
+.PHONY : Chapter5/UFSets/UFSets.i
+
+# target to preprocess a source file
+Chapter5/UFSets/UFSets.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter5/UFSets/UFSets.cpp.i
+.PHONY : Chapter5/UFSets/UFSets.cpp.i
+
+Chapter5/UFSets/UFSets.s: Chapter5/UFSets/UFSets.cpp.s
+
+.PHONY : Chapter5/UFSets/UFSets.s
+
+# target to generate assembly for a file
+Chapter5/UFSets/UFSets.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter5/UFSets/UFSets.cpp.s
+.PHONY : Chapter5/UFSets/UFSets.cpp.s
+
 Def.obj: Def.cpp.obj
 
 .PHONY : Def.obj
@@ -715,6 +742,9 @@ help:
 	@echo ... Chapter5/TreeNode/TreeNode.obj
 	@echo ... Chapter5/TreeNode/TreeNode.i
 	@echo ... Chapter5/TreeNode/TreeNode.s
+	@echo ... Chapter5/UFSets/UFSets.obj
+	@echo ... Chapter5/UFSets/UFSets.i
+	@echo ... Chapter5/UFSets/UFSets.s
 	@echo ... Def.obj
 	@echo ... Def.i
 	@echo ... Def.s
