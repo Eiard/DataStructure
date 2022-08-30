@@ -194,6 +194,12 @@
 		<Unit filename="D:/Computer/Code/C++/DataStructure/Chapter6/MGraph/MGraph.h">
 			<Option target="DataStructure"/>
 		</Unit>
+		<Unit filename="D:/Computer/Code/C++/DataStructure/Chapter6/OrthogonalList/OrthogonalList.cpp">
+			<Option target="DataStructure"/>
+		</Unit>
+		<Unit filename="D:/Computer/Code/C++/DataStructure/Chapter6/OrthogonalList/OrthogonalList.h">
+			<Option target="DataStructure"/>
+		</Unit>
 		<Unit filename="D:/Computer/Code/C++/DataStructure/Chapter6/VNode/VNode.cpp">
 			<Option target="DataStructure"/>
 		</Unit>

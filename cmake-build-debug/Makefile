@@ -655,6 +655,33 @@ Chapter6/MGraph/MGraph.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter6/MGraph/MGraph.cpp.s
 .PHONY : Chapter6/MGraph/MGraph.cpp.s
 
+Chapter6/OrthogonalList/OrthogonalList.obj: Chapter6/OrthogonalList/OrthogonalList.cpp.obj
+
+.PHONY : Chapter6/OrthogonalList/OrthogonalList.obj
+
+# target to build an object file
+Chapter6/OrthogonalList/OrthogonalList.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter6/OrthogonalList/OrthogonalList.cpp.obj
+.PHONY : Chapter6/OrthogonalList/OrthogonalList.cpp.obj
+
+Chapter6/OrthogonalList/OrthogonalList.i: Chapter6/OrthogonalList/OrthogonalList.cpp.i
+
+.PHONY : Chapter6/OrthogonalList/OrthogonalList.i
+
+# target to preprocess a source file
+Chapter6/OrthogonalList/OrthogonalList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter6/OrthogonalList/OrthogonalList.cpp.i
+.PHONY : Chapter6/OrthogonalList/OrthogonalList.cpp.i
+
+Chapter6/OrthogonalList/OrthogonalList.s: Chapter6/OrthogonalList/OrthogonalList.cpp.s
+
+.PHONY : Chapter6/OrthogonalList/OrthogonalList.s
+
+# target to generate assembly for a file
+Chapter6/OrthogonalList/OrthogonalList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter6/OrthogonalList/OrthogonalList.cpp.s
+.PHONY : Chapter6/OrthogonalList/OrthogonalList.cpp.s
+
 Chapter6/VNode/VNode.obj: Chapter6/VNode/VNode.cpp.obj
 
 .PHONY : Chapter6/VNode/VNode.obj
@@ -802,6 +829,9 @@ help:
 	@echo ... Chapter6/MGraph/MGraph.obj
 	@echo ... Chapter6/MGraph/MGraph.i
 	@echo ... Chapter6/MGraph/MGraph.s
+	@echo ... Chapter6/OrthogonalList/OrthogonalList.obj
+	@echo ... Chapter6/OrthogonalList/OrthogonalList.i
+	@echo ... Chapter6/OrthogonalList/OrthogonalList.s
 	@echo ... Chapter6/VNode/VNode.obj
 	@echo ... Chapter6/VNode/VNode.i
 	@echo ... Chapter6/VNode/VNode.s

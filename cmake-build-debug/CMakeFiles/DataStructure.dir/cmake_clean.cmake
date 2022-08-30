@@ -18,6 +18,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/DataStructure.dir/Chapter5/TreeNode/TreeNode.cpp.obj"
   "CMakeFiles/DataStructure.dir/Chapter5/UFSets/UFSets.cpp.obj"
   "CMakeFiles/DataStructure.dir/Chapter6/MGraph/MGraph.cpp.obj"
+  "CMakeFiles/DataStructure.dir/Chapter6/OrthogonalList/OrthogonalList.cpp.obj"
   "CMakeFiles/DataStructure.dir/Chapter6/VNode/VNode.cpp.obj"
   "CMakeFiles/DataStructure.dir/Def.cpp.obj"
   "CMakeFiles/DataStructure.dir/main.cpp.obj"
