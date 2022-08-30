@@ -336,6 +336,32 @@ CMakeFiles/DataStructure.dir/Chapter5/UFSets/UFSets.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DataStructure.dir/Chapter5/UFSets/UFSets.cpp.s"
 	D:\Computer\Environment\cpp\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Computer\Code\C++\DataStructure\Chapter5\UFSets\UFSets.cpp -o CMakeFiles\DataStructure.dir\Chapter5\UFSets\UFSets.cpp.s
 
+CMakeFiles/DataStructure.dir/Chapter6/MGraph/MGraph.cpp.obj: CMakeFiles/DataStructure.dir/flags.make
+CMakeFiles/DataStructure.dir/Chapter6/MGraph/MGraph.cpp.obj: ../Chapter6/MGraph/MGraph.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Computer\Code\C++\DataStructure\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/DataStructure.dir/Chapter6/MGraph/MGraph.cpp.obj"
+	D:\Computer\Environment\cpp\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\DataStructure.dir\Chapter6\MGraph\MGraph.cpp.obj -c D:\Computer\Code\C++\DataStructure\Chapter6\MGraph\MGraph.cpp
+
+CMakeFiles/DataStructure.dir/Chapter6/MGraph/MGraph.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DataStructure.dir/Chapter6/MGraph/MGraph.cpp.i"
+	D:\Computer\Environment\cpp\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Computer\Code\C++\DataStructure\Chapter6\MGraph\MGraph.cpp > CMakeFiles\DataStructure.dir\Chapter6\MGraph\MGraph.cpp.i
+
+CMakeFiles/DataStructure.dir/Chapter6/MGraph/MGraph.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DataStructure.dir/Chapter6/MGraph/MGraph.cpp.s"
+	D:\Computer\Environment\cpp\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Computer\Code\C++\DataStructure\Chapter6\MGraph\MGraph.cpp -o CMakeFiles\DataStructure.dir\Chapter6\MGraph\MGraph.cpp.s
+
+CMakeFiles/DataStructure.dir/Chapter6/VNode/VNode.cpp.obj: CMakeFiles/DataStructure.dir/flags.make
+CMakeFiles/DataStructure.dir/Chapter6/VNode/VNode.cpp.obj: ../Chapter6/VNode/VNode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Computer\Code\C++\DataStructure\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/DataStructure.dir/Chapter6/VNode/VNode.cpp.obj"
+	D:\Computer\Environment\cpp\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\DataStructure.dir\Chapter6\VNode\VNode.cpp.obj -c D:\Computer\Code\C++\DataStructure\Chapter6\VNode\VNode.cpp
+
+CMakeFiles/DataStructure.dir/Chapter6/VNode/VNode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DataStructure.dir/Chapter6/VNode/VNode.cpp.i"
+	D:\Computer\Environment\cpp\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Computer\Code\C++\DataStructure\Chapter6\VNode\VNode.cpp > CMakeFiles\DataStructure.dir\Chapter6\VNode\VNode.cpp.i
+
+CMakeFiles/DataStructure.dir/Chapter6/VNode/VNode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DataStructure.dir/Chapter6/VNode/VNode.cpp.s"
+	D:\Computer\Environment\cpp\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Computer\Code\C++\DataStructure\Chapter6\VNode\VNode.cpp -o CMakeFiles\DataStructure.dir\Chapter6\VNode\VNode.cpp.s
+
 # Object files for target DataStructure
 DataStructure_OBJECTS = \
 "CMakeFiles/DataStructure.dir/main.cpp.obj" \
@@ -357,7 +383,9 @@ DataStructure_OBJECTS = \
 "CMakeFiles/DataStructure.dir/Chapter5/CTNode/CTNode.cpp.obj" \
 "CMakeFiles/DataStructure.dir/Chapter5/CSNode/CSNode.cpp.obj" \
 "CMakeFiles/DataStructure.dir/Chapter5/HTNode/HTNode.cpp.obj" \
-"CMakeFiles/DataStructure.dir/Chapter5/UFSets/UFSets.cpp.obj"
+"CMakeFiles/DataStructure.dir/Chapter5/UFSets/UFSets.cpp.obj" \
+"CMakeFiles/DataStructure.dir/Chapter6/MGraph/MGraph.cpp.obj" \
+"CMakeFiles/DataStructure.dir/Chapter6/VNode/VNode.cpp.obj"
 
 # External object files for target DataStructure
 DataStructure_EXTERNAL_OBJECTS =
@@ -382,11 +410,13 @@ DataStructure.exe: CMakeFiles/DataStructure.dir/Chapter5/CTNode/CTNode.cpp.obj
 DataStructure.exe: CMakeFiles/DataStructure.dir/Chapter5/CSNode/CSNode.cpp.obj
 DataStructure.exe: CMakeFiles/DataStructure.dir/Chapter5/HTNode/HTNode.cpp.obj
 DataStructure.exe: CMakeFiles/DataStructure.dir/Chapter5/UFSets/UFSets.cpp.obj
+DataStructure.exe: CMakeFiles/DataStructure.dir/Chapter6/MGraph/MGraph.cpp.obj
+DataStructure.exe: CMakeFiles/DataStructure.dir/Chapter6/VNode/VNode.cpp.obj
 DataStructure.exe: CMakeFiles/DataStructure.dir/build.make
 DataStructure.exe: CMakeFiles/DataStructure.dir/linklibs.rsp
 DataStructure.exe: CMakeFiles/DataStructure.dir/objects1.rsp
 DataStructure.exe: CMakeFiles/DataStructure.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Computer\Code\C++\DataStructure\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable DataStructure.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Computer\Code\C++\DataStructure\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX executable DataStructure.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\DataStructure.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

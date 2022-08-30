@@ -628,6 +628,60 @@ Chapter5/UFSets/UFSets.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter5/UFSets/UFSets.cpp.s
 .PHONY : Chapter5/UFSets/UFSets.cpp.s
 
+Chapter6/MGraph/MGraph.obj: Chapter6/MGraph/MGraph.cpp.obj
+
+.PHONY : Chapter6/MGraph/MGraph.obj
+
+# target to build an object file
+Chapter6/MGraph/MGraph.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter6/MGraph/MGraph.cpp.obj
+.PHONY : Chapter6/MGraph/MGraph.cpp.obj
+
+Chapter6/MGraph/MGraph.i: Chapter6/MGraph/MGraph.cpp.i
+
+.PHONY : Chapter6/MGraph/MGraph.i
+
+# target to preprocess a source file
+Chapter6/MGraph/MGraph.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter6/MGraph/MGraph.cpp.i
+.PHONY : Chapter6/MGraph/MGraph.cpp.i
+
+Chapter6/MGraph/MGraph.s: Chapter6/MGraph/MGraph.cpp.s
+
+.PHONY : Chapter6/MGraph/MGraph.s
+
+# target to generate assembly for a file
+Chapter6/MGraph/MGraph.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter6/MGraph/MGraph.cpp.s
+.PHONY : Chapter6/MGraph/MGraph.cpp.s
+
+Chapter6/VNode/VNode.obj: Chapter6/VNode/VNode.cpp.obj
+
+.PHONY : Chapter6/VNode/VNode.obj
+
+# target to build an object file
+Chapter6/VNode/VNode.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter6/VNode/VNode.cpp.obj
+.PHONY : Chapter6/VNode/VNode.cpp.obj
+
+Chapter6/VNode/VNode.i: Chapter6/VNode/VNode.cpp.i
+
+.PHONY : Chapter6/VNode/VNode.i
+
+# target to preprocess a source file
+Chapter6/VNode/VNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter6/VNode/VNode.cpp.i
+.PHONY : Chapter6/VNode/VNode.cpp.i
+
+Chapter6/VNode/VNode.s: Chapter6/VNode/VNode.cpp.s
+
+.PHONY : Chapter6/VNode/VNode.s
+
+# target to generate assembly for a file
+Chapter6/VNode/VNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter6/VNode/VNode.cpp.s
+.PHONY : Chapter6/VNode/VNode.cpp.s
+
 Def.obj: Def.cpp.obj
 
 .PHONY : Def.obj
@@ -745,6 +799,12 @@ help:
 	@echo ... Chapter5/UFSets/UFSets.obj
 	@echo ... Chapter5/UFSets/UFSets.i
 	@echo ... Chapter5/UFSets/UFSets.s
+	@echo ... Chapter6/MGraph/MGraph.obj
+	@echo ... Chapter6/MGraph/MGraph.i
+	@echo ... Chapter6/MGraph/MGraph.s
+	@echo ... Chapter6/VNode/VNode.obj
+	@echo ... Chapter6/VNode/VNode.i
+	@echo ... Chapter6/VNode/VNode.s
 	@echo ... Def.obj
 	@echo ... Def.i
 	@echo ... Def.s

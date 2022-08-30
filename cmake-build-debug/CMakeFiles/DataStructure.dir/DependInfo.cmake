@@ -22,6 +22,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "D:/Computer/Code/C++/DataStructure/Chapter5/ThreadNode/ThreadNode.cpp" "D:/Computer/Code/C++/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/Chapter5/ThreadNode/ThreadNode.cpp.obj"
   "D:/Computer/Code/C++/DataStructure/Chapter5/TreeNode/TreeNode.cpp" "D:/Computer/Code/C++/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/Chapter5/TreeNode/TreeNode.cpp.obj"
   "D:/Computer/Code/C++/DataStructure/Chapter5/UFSets/UFSets.cpp" "D:/Computer/Code/C++/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/Chapter5/UFSets/UFSets.cpp.obj"
+  "D:/Computer/Code/C++/DataStructure/Chapter6/MGraph/MGraph.cpp" "D:/Computer/Code/C++/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/Chapter6/MGraph/MGraph.cpp.obj"
+  "D:/Computer/Code/C++/DataStructure/Chapter6/VNode/VNode.cpp" "D:/Computer/Code/C++/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/Chapter6/VNode/VNode.cpp.obj"
   "D:/Computer/Code/C++/DataStructure/Def.cpp" "D:/Computer/Code/C++/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/Def.cpp.obj"
   "D:/Computer/Code/C++/DataStructure/main.cpp" "D:/Computer/Code/C++/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/main.cpp.obj"
   )
