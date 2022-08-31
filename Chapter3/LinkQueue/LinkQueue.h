@@ -20,7 +20,15 @@
  * 链式队列结点
  */
 
-typedef BiTNode *QueueElemType;
+/**
+ * 用于二叉树的
+ */
+//typedef BiTNode *QueueElemType;
+
+/**
+ * 用于图
+ */
+typedef int QueueElemType;
 
 typedef struct LinkNode {
     QueueElemType data;
