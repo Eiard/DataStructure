@@ -85,6 +85,41 @@ void BFS(MGraph G, int v) {
     }
 }
 
+/**
+ * 避免有非连通图的顶点未访问到
+ *
+ * @param G
+ */
+void DFSTraverse(MGraph G) {
+    // 初始化所有顶点都未被访问
+    for (int v = 0; v < G.vexNum; ++v) {
+        visited[v] = false;
+    }
+
+    for (int v = 0; v < G.vexNum; ++v) {
+        if (!visited[v]) {
+            DFS(G, v);
+        }
+    }
+}
+
+/**
+ * 类似于树的先根遍历
+ * 遍历顺序 : 根 + 与其相邻的所有顶点
+ *
+ * @param G
+ * @param v
+ */
+void DFS(MGraph G, int v) {
+    visit(v);
+    visited[v] = true;
+    for (int w = FirstNeighbor(G, v); w >= 0; w = NextNeighbor(G, v, w)) {
+        // 如果该顶点未被访问,则递归调用DFS算法
+        if (!visited[w]) {
+            DFS(G, v);
+        }
+    }
+}
 
 void visit(int v) {
     printf("%c \n", mGraph.Vex[v]);

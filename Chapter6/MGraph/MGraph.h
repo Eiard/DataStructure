@@ -68,16 +68,57 @@ int NextNeighbor(MGraph G, int v, int w);
 
 /**
  * 对整个图进行广度优先遍历
+ *
+ * 避免有非连通的图无法遍历到
+ *
+ * 实现对所有顶点的遍历
+ *
+ * 对于无向图,调用BFS函数的次数 = 连通分量数
+ *
+ * 邻接表时间复杂度 0(E + v)
+ * 邻接矩阵时间复杂度 0(v^2)
+ *
  * @param G
  */
 void BFSTraverse(MGraph G);
 
 /**
+ * 利用了辅助队列
+ *
  * 对顶点V进行广度优先遍历
+ *
+ * 缺点:非连通图无法通过一个结点实现遍历所有
+ * 改进:实现 BFSTraverse
+ *
  * @param G
  * @param v
  */
 void BFS(MGraph G, int v);
+
+/**
+ * 对图进行深度优先遍历
+ * 类似于树的先根遍历
+ *
+ * 避免非连通图无法将左右结点遍历完
+ *
+ * @param G
+ */
+void DFSTraverse(MGraph G);
+
+/**
+ * 利用了递归
+ *
+ * DFS遍历
+ * 从结点v开始
+ * 利用深度优先遍历
+ * 遍历所有结点
+ *
+ * 缺点:对于非连通图来说,仅仅从一个顶点v不一定能遍历完所有结点
+ *
+ * @param G
+ * @param v
+ */
+void DFS(MGraph G, int v);
 
 /**
  * 访问顶点表中下标为v的顶点的数据
