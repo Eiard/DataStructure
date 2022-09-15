@@ -709,6 +709,33 @@ Chapter6/VNode/VNode.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter6/VNode/VNode.cpp.s
 .PHONY : Chapter6/VNode/VNode.cpp.s
 
+Chapter8/InsertSort/InsertSort.obj: Chapter8/InsertSort/InsertSort.cpp.obj
+
+.PHONY : Chapter8/InsertSort/InsertSort.obj
+
+# target to build an object file
+Chapter8/InsertSort/InsertSort.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter8/InsertSort/InsertSort.cpp.obj
+.PHONY : Chapter8/InsertSort/InsertSort.cpp.obj
+
+Chapter8/InsertSort/InsertSort.i: Chapter8/InsertSort/InsertSort.cpp.i
+
+.PHONY : Chapter8/InsertSort/InsertSort.i
+
+# target to preprocess a source file
+Chapter8/InsertSort/InsertSort.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter8/InsertSort/InsertSort.cpp.i
+.PHONY : Chapter8/InsertSort/InsertSort.cpp.i
+
+Chapter8/InsertSort/InsertSort.s: Chapter8/InsertSort/InsertSort.cpp.s
+
+.PHONY : Chapter8/InsertSort/InsertSort.s
+
+# target to generate assembly for a file
+Chapter8/InsertSort/InsertSort.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter8/InsertSort/InsertSort.cpp.s
+.PHONY : Chapter8/InsertSort/InsertSort.cpp.s
+
 Def.obj: Def.cpp.obj
 
 .PHONY : Def.obj
@@ -835,6 +862,9 @@ help:
 	@echo ... Chapter6/VNode/VNode.obj
 	@echo ... Chapter6/VNode/VNode.i
 	@echo ... Chapter6/VNode/VNode.s
+	@echo ... Chapter8/InsertSort/InsertSort.obj
+	@echo ... Chapter8/InsertSort/InsertSort.i
+	@echo ... Chapter8/InsertSort/InsertSort.s
 	@echo ... Def.obj
 	@echo ... Def.i
 	@echo ... Def.s

@@ -85,6 +85,29 @@ void BFS(MGraph G, int v) {
     }
 }
 
+void BFS_MIN_Distance(MGraph G, int v) {
+
+    visit(v);
+    visited[v] = true;
+
+    EnQueue(Q, v);
+
+    while (!QueueIsEmpty(Q)) {
+        // 不空的话 出队一个
+        DeQueue(Q, v);
+
+        for (int w = FirstNeighbor(G, v); w >= 0; w = NextNeighbor(G, v, w)) {
+            // 如果该结点未被访问
+            if (!visited[w]) {
+                d[w] = d[v] + 1;   // 如果能到达,则我现在距离起点的距离 = 前驱距离起点的距离 + 1
+                path[w] = v;  // 他的直接前驱
+                visited[w] = true;  // 更新标记
+                EnQueue(Q, w);  // 每个结点访问完之后都入队
+            }
+        }
+    }
+}
+
 /**
  * 避免有非连通图的顶点未访问到
  *

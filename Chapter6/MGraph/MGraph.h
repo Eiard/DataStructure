@@ -38,6 +38,17 @@ typedef struct {
  */
 bool visited[MaxVertexNum];
 
+
+/**
+ * 路径的距离,不带权值
+ */
+int d[MaxVertexNum];
+
+/**
+ * 前驱的编号
+ */
+int path[MaxVertexNum];
+
 /**
  * 初始化一个图
  */
@@ -94,6 +105,18 @@ void BFSTraverse(MGraph G);
  * @param v
  */
 void BFS(MGraph G, int v);
+
+
+/**
+ * 广度优先遍历
+ *
+ * 求顶点u到其他顶点的最短路径
+ *
+ * @param G
+ * @param v
+ */
+void BFS_MIN_Distance(MGraph G, int v);
+
 
 /**
  * 对图进行深度优先遍历
