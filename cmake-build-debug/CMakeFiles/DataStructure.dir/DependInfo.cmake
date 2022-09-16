@@ -25,7 +25,9 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "D:/Computer/Code/C++/DataStructure/Chapter6/MGraph/MGraph.cpp" "D:/Computer/Code/C++/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/Chapter6/MGraph/MGraph.cpp.obj"
   "D:/Computer/Code/C++/DataStructure/Chapter6/OrthogonalList/OrthogonalList.cpp" "D:/Computer/Code/C++/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/Chapter6/OrthogonalList/OrthogonalList.cpp.obj"
   "D:/Computer/Code/C++/DataStructure/Chapter6/VNode/VNode.cpp" "D:/Computer/Code/C++/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/Chapter6/VNode/VNode.cpp.obj"
+  "D:/Computer/Code/C++/DataStructure/Chapter8/ExchangeSort/ExchangeSort.cpp" "D:/Computer/Code/C++/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/Chapter8/ExchangeSort/ExchangeSort.cpp.obj"
   "D:/Computer/Code/C++/DataStructure/Chapter8/InsertSort/InsertSort.cpp" "D:/Computer/Code/C++/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/Chapter8/InsertSort/InsertSort.cpp.obj"
+  "D:/Computer/Code/C++/DataStructure/Chapter8/SelectSort/SelectSort.cpp" "D:/Computer/Code/C++/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/Chapter8/SelectSort/SelectSort.cpp.obj"
   "D:/Computer/Code/C++/DataStructure/Def.cpp" "D:/Computer/Code/C++/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/Def.cpp.obj"
   "D:/Computer/Code/C++/DataStructure/main.cpp" "D:/Computer/Code/C++/DataStructure/cmake-build-debug/CMakeFiles/DataStructure.dir/main.cpp.obj"
   )

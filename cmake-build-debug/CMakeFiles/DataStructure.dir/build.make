@@ -388,6 +388,32 @@ CMakeFiles/DataStructure.dir/Chapter8/InsertSort/InsertSort.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DataStructure.dir/Chapter8/InsertSort/InsertSort.cpp.s"
 	D:\Computer\Environment\cpp\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Computer\Code\C++\DataStructure\Chapter8\InsertSort\InsertSort.cpp -o CMakeFiles\DataStructure.dir\Chapter8\InsertSort\InsertSort.cpp.s
 
+CMakeFiles/DataStructure.dir/Chapter8/ExchangeSort/ExchangeSort.cpp.obj: CMakeFiles/DataStructure.dir/flags.make
+CMakeFiles/DataStructure.dir/Chapter8/ExchangeSort/ExchangeSort.cpp.obj: ../Chapter8/ExchangeSort/ExchangeSort.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Computer\Code\C++\DataStructure\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/DataStructure.dir/Chapter8/ExchangeSort/ExchangeSort.cpp.obj"
+	D:\Computer\Environment\cpp\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\DataStructure.dir\Chapter8\ExchangeSort\ExchangeSort.cpp.obj -c D:\Computer\Code\C++\DataStructure\Chapter8\ExchangeSort\ExchangeSort.cpp
+
+CMakeFiles/DataStructure.dir/Chapter8/ExchangeSort/ExchangeSort.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DataStructure.dir/Chapter8/ExchangeSort/ExchangeSort.cpp.i"
+	D:\Computer\Environment\cpp\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Computer\Code\C++\DataStructure\Chapter8\ExchangeSort\ExchangeSort.cpp > CMakeFiles\DataStructure.dir\Chapter8\ExchangeSort\ExchangeSort.cpp.i
+
+CMakeFiles/DataStructure.dir/Chapter8/ExchangeSort/ExchangeSort.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DataStructure.dir/Chapter8/ExchangeSort/ExchangeSort.cpp.s"
+	D:\Computer\Environment\cpp\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Computer\Code\C++\DataStructure\Chapter8\ExchangeSort\ExchangeSort.cpp -o CMakeFiles\DataStructure.dir\Chapter8\ExchangeSort\ExchangeSort.cpp.s
+
+CMakeFiles/DataStructure.dir/Chapter8/SelectSort/SelectSort.cpp.obj: CMakeFiles/DataStructure.dir/flags.make
+CMakeFiles/DataStructure.dir/Chapter8/SelectSort/SelectSort.cpp.obj: ../Chapter8/SelectSort/SelectSort.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Computer\Code\C++\DataStructure\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/DataStructure.dir/Chapter8/SelectSort/SelectSort.cpp.obj"
+	D:\Computer\Environment\cpp\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\DataStructure.dir\Chapter8\SelectSort\SelectSort.cpp.obj -c D:\Computer\Code\C++\DataStructure\Chapter8\SelectSort\SelectSort.cpp
+
+CMakeFiles/DataStructure.dir/Chapter8/SelectSort/SelectSort.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DataStructure.dir/Chapter8/SelectSort/SelectSort.cpp.i"
+	D:\Computer\Environment\cpp\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Computer\Code\C++\DataStructure\Chapter8\SelectSort\SelectSort.cpp > CMakeFiles\DataStructure.dir\Chapter8\SelectSort\SelectSort.cpp.i
+
+CMakeFiles/DataStructure.dir/Chapter8/SelectSort/SelectSort.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DataStructure.dir/Chapter8/SelectSort/SelectSort.cpp.s"
+	D:\Computer\Environment\cpp\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Computer\Code\C++\DataStructure\Chapter8\SelectSort\SelectSort.cpp -o CMakeFiles\DataStructure.dir\Chapter8\SelectSort\SelectSort.cpp.s
+
 # Object files for target DataStructure
 DataStructure_OBJECTS = \
 "CMakeFiles/DataStructure.dir/main.cpp.obj" \
@@ -413,7 +439,9 @@ DataStructure_OBJECTS = \
 "CMakeFiles/DataStructure.dir/Chapter6/MGraph/MGraph.cpp.obj" \
 "CMakeFiles/DataStructure.dir/Chapter6/VNode/VNode.cpp.obj" \
 "CMakeFiles/DataStructure.dir/Chapter6/OrthogonalList/OrthogonalList.cpp.obj" \
-"CMakeFiles/DataStructure.dir/Chapter8/InsertSort/InsertSort.cpp.obj"
+"CMakeFiles/DataStructure.dir/Chapter8/InsertSort/InsertSort.cpp.obj" \
+"CMakeFiles/DataStructure.dir/Chapter8/ExchangeSort/ExchangeSort.cpp.obj" \
+"CMakeFiles/DataStructure.dir/Chapter8/SelectSort/SelectSort.cpp.obj"
 
 # External object files for target DataStructure
 DataStructure_EXTERNAL_OBJECTS =
@@ -442,11 +470,13 @@ DataStructure.exe: CMakeFiles/DataStructure.dir/Chapter6/MGraph/MGraph.cpp.obj
 DataStructure.exe: CMakeFiles/DataStructure.dir/Chapter6/VNode/VNode.cpp.obj
 DataStructure.exe: CMakeFiles/DataStructure.dir/Chapter6/OrthogonalList/OrthogonalList.cpp.obj
 DataStructure.exe: CMakeFiles/DataStructure.dir/Chapter8/InsertSort/InsertSort.cpp.obj
+DataStructure.exe: CMakeFiles/DataStructure.dir/Chapter8/ExchangeSort/ExchangeSort.cpp.obj
+DataStructure.exe: CMakeFiles/DataStructure.dir/Chapter8/SelectSort/SelectSort.cpp.obj
 DataStructure.exe: CMakeFiles/DataStructure.dir/build.make
 DataStructure.exe: CMakeFiles/DataStructure.dir/linklibs.rsp
 DataStructure.exe: CMakeFiles/DataStructure.dir/objects1.rsp
 DataStructure.exe: CMakeFiles/DataStructure.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Computer\Code\C++\DataStructure\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX executable DataStructure.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Computer\Code\C++\DataStructure\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Linking CXX executable DataStructure.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\DataStructure.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

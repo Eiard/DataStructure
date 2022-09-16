@@ -47,9 +47,60 @@ CMakeFiles/DataStructure.dir/Chapter5/BiTNode/BiTNode.cpp.obj
  D:/Computer/Code/C++/DataStructure/Chapter5/BiTNode/BiTNode.cpp
  D:/Computer/Code/C++/DataStructure/Chapter5/BiTNode/BiTNode.h
  D:/Computer/Code/C++/DataStructure/Def.h
+CMakeFiles/DataStructure.dir/Chapter5/CSNode/CSNode.cpp.obj
+ D:/Computer/Code/C++/DataStructure/Chapter5/CSNode/CSNode.cpp
+ D:/Computer/Code/C++/DataStructure/Chapter5/CSNode/CSNode.h
+ D:/Computer/Code/C++/DataStructure/Def.h
+CMakeFiles/DataStructure.dir/Chapter5/CTNode/CTNode.cpp.obj
+ D:/Computer/Code/C++/DataStructure/Chapter5/CTNode/CTNode.cpp
+ D:/Computer/Code/C++/DataStructure/Chapter5/CTNode/CTNode.h
+ D:/Computer/Code/C++/DataStructure/Def.h
+CMakeFiles/DataStructure.dir/Chapter5/HTNode/HTNode.cpp.obj
+ D:/Computer/Code/C++/DataStructure/Chapter5/HTNode/HTNode.cpp
+ D:/Computer/Code/C++/DataStructure/Chapter5/HTNode/HTNode.h
+ D:/Computer/Code/C++/DataStructure/Def.h
+CMakeFiles/DataStructure.dir/Chapter5/PTNode/PTNode.cpp.obj
+ D:/Computer/Code/C++/DataStructure/Chapter5/PTNode/PTNode.cpp
+ D:/Computer/Code/C++/DataStructure/Chapter5/PTNode/PTNode.h
+ D:/Computer/Code/C++/DataStructure/Def.h
+CMakeFiles/DataStructure.dir/Chapter5/ThreadNode/ThreadNode.cpp.obj
+ D:/Computer/Code/C++/DataStructure/Chapter5/ThreadNode/ThreadNode.cpp
+ D:/Computer/Code/C++/DataStructure/Chapter5/ThreadNode/ThreadNode.h
+ D:/Computer/Code/C++/DataStructure/Def.h
 CMakeFiles/DataStructure.dir/Chapter5/TreeNode/TreeNode.cpp.obj
  D:/Computer/Code/C++/DataStructure/Chapter5/TreeNode/TreeNode.cpp
  D:/Computer/Code/C++/DataStructure/Chapter5/TreeNode/TreeNode.h
+ D:/Computer/Code/C++/DataStructure/Def.h
+CMakeFiles/DataStructure.dir/Chapter5/UFSets/UFSets.cpp.obj
+ D:/Computer/Code/C++/DataStructure/Chapter5/UFSets/UFSets.cpp
+ D:/Computer/Code/C++/DataStructure/Chapter5/UFSets/UFSets.h
+ D:/Computer/Code/C++/DataStructure/Def.h
+CMakeFiles/DataStructure.dir/Chapter6/MGraph/MGraph.cpp.obj
+ D:/Computer/Code/C++/DataStructure/Chapter3/LinkQueue/LinkQueue.h
+ D:/Computer/Code/C++/DataStructure/Chapter5/BiTNode/BiTNode.h
+ D:/Computer/Code/C++/DataStructure/Chapter6/MGraph/MGraph.cpp
+ D:/Computer/Code/C++/DataStructure/Chapter6/MGraph/MGraph.h
+ D:/Computer/Code/C++/DataStructure/Def.h
+CMakeFiles/DataStructure.dir/Chapter6/OrthogonalList/OrthogonalList.cpp.obj
+ D:/Computer/Code/C++/DataStructure/Chapter6/OrthogonalList/OrthogonalList.cpp
+ D:/Computer/Code/C++/DataStructure/Chapter6/OrthogonalList/OrthogonalList.h
+ D:/Computer/Code/C++/DataStructure/Def.h
+CMakeFiles/DataStructure.dir/Chapter6/VNode/VNode.cpp.obj
+ D:/Computer/Code/C++/DataStructure/Chapter6/VNode/VNode.cpp
+ D:/Computer/Code/C++/DataStructure/Chapter6/VNode/VNode.h
+ D:/Computer/Code/C++/DataStructure/Def.h
+CMakeFiles/DataStructure.dir/Chapter8/ExchangeSort/ExchangeSort.cpp.obj
+ D:/Computer/Code/C++/DataStructure/Chapter8/ExchangeSort/ExchangeSort.cpp
+ D:/Computer/Code/C++/DataStructure/Chapter8/ExchangeSort/ExchangeSort.h
+ D:/Computer/Code/C++/DataStructure/Chapter8/InsertSort/InsertSort.h
+ D:/Computer/Code/C++/DataStructure/Def.h
+CMakeFiles/DataStructure.dir/Chapter8/InsertSort/InsertSort.cpp.obj
+ D:/Computer/Code/C++/DataStructure/Chapter8/InsertSort/InsertSort.cpp
+ D:/Computer/Code/C++/DataStructure/Chapter8/InsertSort/InsertSort.h
+ D:/Computer/Code/C++/DataStructure/Def.h
+CMakeFiles/DataStructure.dir/Chapter8/SelectSort/SelectSort.cpp.obj
+ D:/Computer/Code/C++/DataStructure/Chapter8/SelectSort/SelectSort.cpp
+ D:/Computer/Code/C++/DataStructure/Chapter8/SelectSort/SelectSort.h
  D:/Computer/Code/C++/DataStructure/Def.h
 CMakeFiles/DataStructure.dir/Def.cpp.obj
  D:/Computer/Code/C++/DataStructure/Def.cpp
@@ -67,5 +118,7 @@ CMakeFiles/DataStructure.dir/main.cpp.obj
  D:/Computer/Code/C++/DataStructure/Chapter4/SString/SString.h
  D:/Computer/Code/C++/DataStructure/Chapter5/BiTNode/BiTNode.h
  D:/Computer/Code/C++/DataStructure/Chapter5/TreeNode/TreeNode.h
+ D:/Computer/Code/C++/DataStructure/Chapter8/ExchangeSort/ExchangeSort.h
+ D:/Computer/Code/C++/DataStructure/Chapter8/InsertSort/InsertSort.h
  D:/Computer/Code/C++/DataStructure/Def.h
  D:/Computer/Code/C++/DataStructure/main.cpp

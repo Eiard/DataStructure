@@ -206,10 +206,22 @@
 		<Unit filename="D:/Computer/Code/C++/DataStructure/Chapter6/VNode/VNode.h">
 			<Option target="DataStructure"/>
 		</Unit>
+		<Unit filename="D:/Computer/Code/C++/DataStructure/Chapter8/ExchangeSort/ExchangeSort.cpp">
+			<Option target="DataStructure"/>
+		</Unit>
+		<Unit filename="D:/Computer/Code/C++/DataStructure/Chapter8/ExchangeSort/ExchangeSort.h">
+			<Option target="DataStructure"/>
+		</Unit>
 		<Unit filename="D:/Computer/Code/C++/DataStructure/Chapter8/InsertSort/InsertSort.cpp">
 			<Option target="DataStructure"/>
 		</Unit>
 		<Unit filename="D:/Computer/Code/C++/DataStructure/Chapter8/InsertSort/InsertSort.h">
+			<Option target="DataStructure"/>
+		</Unit>
+		<Unit filename="D:/Computer/Code/C++/DataStructure/Chapter8/SelectSort/SelectSort.cpp">
+			<Option target="DataStructure"/>
+		</Unit>
+		<Unit filename="D:/Computer/Code/C++/DataStructure/Chapter8/SelectSort/SelectSort.h">
 			<Option target="DataStructure"/>
 		</Unit>
 		<Unit filename="D:/Computer/Code/C++/DataStructure/Def.cpp">

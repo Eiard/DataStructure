@@ -142,30 +142,30 @@ int TreeDepth(BiTree T) {
         return l > r ? l + 1 : r + 1;
     }
 }
-
-void LevelOrder(BiTree T) {
-    LinkQueue Q;  // 利用链式队列 (不知道树的大小)
-    InitQueue(Q);
-    BiTree p;       // 遍历指针
-    // 初始将根节点入队
-    EnQueue(Q, T);
-
-    // 队列不为空
-    while (!QueueIsEmpty(Q)) {
-        // 出队一个结点
-        DeQueue(Q, p);
-        // 访问它
-        Visit(p);
-
-        // 将其左右孩子入队
-        if (p->lChild != nullptr) {
-            EnQueue(Q, p->lChild);
-        }
-        if (p->rChild != nullptr) {
-            EnQueue(Q, p->rChild);
-        }
-    }
-}
+//
+//void LevelOrder(BiTree T) {
+//    LinkQueue Q;  // 利用链式队列 (不知道树的大小)
+//    InitQueue(Q);
+//    BiTree p;       // 遍历指针
+//    // 初始将根节点入队
+//    EnQueue(Q, T);
+//
+//    // 队列不为空
+//    while (!QueueIsEmpty(Q)) {
+//        // 出队一个结点
+//        DeQueue(Q, p);
+//        // 访问它
+//        Visit(p);
+//
+//        // 将其左右孩子入队
+//        if (p->lChild != nullptr) {
+//            EnQueue(Q, p->lChild);
+//        }
+//        if (p->rChild != nullptr) {
+//            EnQueue(Q, p->rChild);
+//        }
+//    }
+//}
 
 void TestBiTNode() {
 
@@ -193,7 +193,7 @@ void TestBiTNode() {
 
     printf("\n");
 
-    LevelOrder(root);
+//    LevelOrder(root);
 
     printf("\n");
 

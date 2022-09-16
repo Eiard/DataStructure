@@ -6,19 +6,25 @@
 
 #IncludeRegexTransform: 
 
-D:/Computer/Code/C++/DataStructure/Chapter3/LinkQueue/LinkQueue.h
+D:/Computer/Code/C++/DataStructure/Chapter8/ExchangeSort/ExchangeSort.cpp
+ExchangeSort.h
+D:/Computer/Code/C++/DataStructure/Chapter8/ExchangeSort/ExchangeSort.h
+../InsertSort/InsertSort.h
+D:/Computer/Code/C++/DataStructure/Chapter8/InsertSort/InsertSort.h
+
+D:/Computer/Code/C++/DataStructure/Chapter8/ExchangeSort/ExchangeSort.h
 ../../Def.h
 D:/Computer/Code/C++/DataStructure/Def.h
-../../Chapter5/BiTNode/BiTNode.h
-D:/Computer/Code/C++/DataStructure/Chapter5/BiTNode/BiTNode.h
 
-D:/Computer/Code/C++/DataStructure/Chapter5/BiTNode/BiTNode.cpp
-BiTNode.h
-D:/Computer/Code/C++/DataStructure/Chapter5/BiTNode/BiTNode.h
-../../Chapter3/LinkQueue/LinkQueue.h
-D:/Computer/Code/C++/DataStructure/Chapter3/LinkQueue/LinkQueue.h
+D:/Computer/Code/C++/DataStructure/Chapter8/InsertSort/InsertSort.h
+../../Def.h
+D:/Computer/Code/C++/DataStructure/Def.h
 
-D:/Computer/Code/C++/DataStructure/Chapter5/BiTNode/BiTNode.h
+D:/Computer/Code/C++/DataStructure/Chapter8/SelectSort/SelectSort.cpp
+SelectSort.h
+D:/Computer/Code/C++/DataStructure/Chapter8/SelectSort/SelectSort.h
+
+D:/Computer/Code/C++/DataStructure/Chapter8/SelectSort/SelectSort.h
 ../../Def.h
 D:/Computer/Code/C++/DataStructure/Def.h
 

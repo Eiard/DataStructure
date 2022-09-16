@@ -26,6 +26,10 @@
 #include "Chapter5/TreeNode/TreeNode.h"
 #include "Chapter5/BiTNode/BiTNode.h"
 
+
+#include "Chapter8/InsertSort/InsertSort.h"
+#include "Chapter8/ExchangeSort/ExchangeSort.h"
+
 int main() {
     // 静态线性表测试
     // TestSqList();
@@ -43,8 +47,13 @@ int main() {
     // TestSString();
 
     // 树相关功能测试
-    TestBiTNode();
+    //TestBiTNode();
 
+    // 测试插入排序
+    //TestInsertSort();
+
+
+    TestExchangeSort();
     return 0;
 }
 

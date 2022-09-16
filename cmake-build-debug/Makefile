@@ -709,6 +709,33 @@ Chapter6/VNode/VNode.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter6/VNode/VNode.cpp.s
 .PHONY : Chapter6/VNode/VNode.cpp.s
 
+Chapter8/ExchangeSort/ExchangeSort.obj: Chapter8/ExchangeSort/ExchangeSort.cpp.obj
+
+.PHONY : Chapter8/ExchangeSort/ExchangeSort.obj
+
+# target to build an object file
+Chapter8/ExchangeSort/ExchangeSort.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter8/ExchangeSort/ExchangeSort.cpp.obj
+.PHONY : Chapter8/ExchangeSort/ExchangeSort.cpp.obj
+
+Chapter8/ExchangeSort/ExchangeSort.i: Chapter8/ExchangeSort/ExchangeSort.cpp.i
+
+.PHONY : Chapter8/ExchangeSort/ExchangeSort.i
+
+# target to preprocess a source file
+Chapter8/ExchangeSort/ExchangeSort.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter8/ExchangeSort/ExchangeSort.cpp.i
+.PHONY : Chapter8/ExchangeSort/ExchangeSort.cpp.i
+
+Chapter8/ExchangeSort/ExchangeSort.s: Chapter8/ExchangeSort/ExchangeSort.cpp.s
+
+.PHONY : Chapter8/ExchangeSort/ExchangeSort.s
+
+# target to generate assembly for a file
+Chapter8/ExchangeSort/ExchangeSort.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter8/ExchangeSort/ExchangeSort.cpp.s
+.PHONY : Chapter8/ExchangeSort/ExchangeSort.cpp.s
+
 Chapter8/InsertSort/InsertSort.obj: Chapter8/InsertSort/InsertSort.cpp.obj
 
 .PHONY : Chapter8/InsertSort/InsertSort.obj
@@ -735,6 +762,33 @@ Chapter8/InsertSort/InsertSort.s: Chapter8/InsertSort/InsertSort.cpp.s
 Chapter8/InsertSort/InsertSort.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter8/InsertSort/InsertSort.cpp.s
 .PHONY : Chapter8/InsertSort/InsertSort.cpp.s
+
+Chapter8/SelectSort/SelectSort.obj: Chapter8/SelectSort/SelectSort.cpp.obj
+
+.PHONY : Chapter8/SelectSort/SelectSort.obj
+
+# target to build an object file
+Chapter8/SelectSort/SelectSort.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter8/SelectSort/SelectSort.cpp.obj
+.PHONY : Chapter8/SelectSort/SelectSort.cpp.obj
+
+Chapter8/SelectSort/SelectSort.i: Chapter8/SelectSort/SelectSort.cpp.i
+
+.PHONY : Chapter8/SelectSort/SelectSort.i
+
+# target to preprocess a source file
+Chapter8/SelectSort/SelectSort.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter8/SelectSort/SelectSort.cpp.i
+.PHONY : Chapter8/SelectSort/SelectSort.cpp.i
+
+Chapter8/SelectSort/SelectSort.s: Chapter8/SelectSort/SelectSort.cpp.s
+
+.PHONY : Chapter8/SelectSort/SelectSort.s
+
+# target to generate assembly for a file
+Chapter8/SelectSort/SelectSort.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure.dir\build.make CMakeFiles/DataStructure.dir/Chapter8/SelectSort/SelectSort.cpp.s
+.PHONY : Chapter8/SelectSort/SelectSort.cpp.s
 
 Def.obj: Def.cpp.obj
 
@@ -862,9 +916,15 @@ help:
 	@echo ... Chapter6/VNode/VNode.obj
 	@echo ... Chapter6/VNode/VNode.i
 	@echo ... Chapter6/VNode/VNode.s
+	@echo ... Chapter8/ExchangeSort/ExchangeSort.obj
+	@echo ... Chapter8/ExchangeSort/ExchangeSort.i
+	@echo ... Chapter8/ExchangeSort/ExchangeSort.s
 	@echo ... Chapter8/InsertSort/InsertSort.obj
 	@echo ... Chapter8/InsertSort/InsertSort.i
 	@echo ... Chapter8/InsertSort/InsertSort.s
+	@echo ... Chapter8/SelectSort/SelectSort.obj
+	@echo ... Chapter8/SelectSort/SelectSort.i
+	@echo ... Chapter8/SelectSort/SelectSort.s
 	@echo ... Def.obj
 	@echo ... Def.i
 	@echo ... Def.s
